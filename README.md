@@ -1,130 +1,125 @@
-# Local Resource Finder for Housing and Food Insecurity
+# Local Resource Finder
 
-A constraint-aware local resource finder that combines a structured service index with hybrid lexical-semantic retrieval. Accepts conversational queries like *"food pantry open tonight near me for families"* and returns ranked resource cards surfacing the most decision-critical information up front.
+A constraint-aware local resource finder for food and housing insecurity in Michigan. It builds a structured index of food pantries, emergency shelters, and housing assistance programs from web scraping and OpenStreetMap, then answers conversational queries like *"food pantry open tonight near me for families"* using hybrid BM25 + semantic retrieval with constraint-aware reranking.
 
 **Team:** Emily Wang, Rhys Burman, Seth Hyslop, Caleb Lee, Tarun Uppuluri
-
----
-
-## How it works
-
-Queries are mapped to structured intent and constraints (service type, open now, near me, eligibility), then retrieved via BM25 + sentence embeddings, and reranked using a weighted combination of lexical relevance, semantic relevance, proximity, and availability.
-
-```
-Query → parse_query → BM25 + Embeddings → merge → rerank → ranked results
-```
 
 ---
 
 ## Project structure
 
 ```
-resource-finder/
-├── data/
-│   ├── raw_resources.jsonl              # Seed records (3 examples)
-│   ├── normalized_resources.jsonl       # Cleaned, geocoded records for search
-│   ├── benchmark_queries.json           # 10 evaluation queries
-│   ├── run_results.json                 # Example annotated results
-│   ├── annotations_template.json        # Template for relevance annotations
-│   └── schema_example.json             # Record schema reference
-└── src/
-    ├── hybrid_retrieve.py               # Main search entry point
-    ├── query_parser.py                  # Intent + constraint extraction
-    ├── rerank.py                        # Multi-factor scoring and ranking
-    ├── build_bm25.py                    # BM25 lexical index
-    ├── build_embeddings.py              # Sentence-transformer embeddings
-    ├── normalize_records.py             # Raw → normalized JSONL
-    ├── scrape_foodpantries.py           # Scraper: foodpantries.org (Michigan)
-    ├── scrape_shelters.py               # Scraper: shelterlistings.org (Michigan)
-    ├── fetch_api_resources.py           # API fetcher: 211.org + HUD
-    ├── merge_raw.py                     # Merge + deduplicate JSONL sources
-    ├── evaluate.py                      # IR metrics (P@K, Recall, MRR, nDCG)
-    └── latency_eval.py                  # Retrieval latency benchmarks
+src/
+  collect_data.py      # scrape + OSM + geocode
+  build_index.py       # merge + normalize -> search index
+  search.py            # user-facing CLI
+  hybrid_retrieve.py   # hybrid BM25 + embedding search (with geographic pre-filter)
+  rerank.py            # constraint-aware scoring with dynamic radius + distance decay
+  query_parser.py      # intent + constraint extraction
+  build_bm25.py        # lexical index
+  build_embeddings.py  # semantic embeddings
+  normalize_records.py # record normalization
+  run_benchmark.py     # run all benchmark queries, output results for annotation
+  evaluate.py          # IR metrics from annotated run_results.json
+  latency_eval.py      # per-component latency benchmarks
+data/
+  raw_food.jsonl               # scraped food pantry records (foodpantries.org)
+  raw_shelters.jsonl           # scraped shelter records (shelterlistings.org)
+  raw_osm.jsonl                # OpenStreetMap social facilities
+  normalized_resources.jsonl   # built index (search reads this)
+  benchmark_queries.json       # 10 benchmark queries
+  run_results_raw.json         # ranked results with org names, for annotation
+  run_results.json             # annotated relevance labels (0/1/2), read by evaluate.py
 ```
 
 ---
 
 ## Quickstart
 
-### 1. Install dependencies
+**1. Install dependencies**
 
 ```bash
+python3 -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 2. Verify the pipeline with seed data
+**2. Collect data**
 
 ```bash
 cd src
-python hybrid_retrieve.py
+
+# All sources (food pantries + shelters + OSM)
+python collect_data.py
+
+# Subset of sources for faster testing
+python collect_data.py --sources food --cities ann_arbor ypsilanti
+python collect_data.py --sources shelters --max-shelter-cities 5
+python collect_data.py --sources osm
+
+# Geocode missing coordinates in existing raw files without re-scraping
+python collect_data.py --sources geocode
+
+# Skip geocoding (faster, coordinates will be missing for scraped records)
+python collect_data.py --skip-geocode
 ```
 
-Runs a sample query against the 3 included seed records. If results print, the pipeline works.
-
-### 3. Collect real data
-
-**Web scraping (no API keys needed):**
+**3. Build the index**
 
 ```bash
-# Quick test
-python scrape_foodpantries.py --cities ann_arbor ypsilanti
-python scrape_shelters.py --max-cities 3
-
-# Full Michigan run
-python scrape_foodpantries.py
-python scrape_shelters.py
+python build_index.py
 ```
 
-**API fetching (optional, higher quality):**
-
-Register for free keys first:
-- 211 API: https://api.211.org/ → "Request Access"
-- HUD API: https://www.huduser.gov/portal/dataset/apidescription.html → "Request a Token"
+**4. Search**
 
 ```bash
-export API_211_KEY="your_key"
-export HUD_API_KEY="your_key"
-python fetch_api_resources.py
-```
-
-### 4. Merge and normalize
-
-```bash
-python merge_raw.py
-
-python -c "
-from normalize_records import normalize_jsonl
-normalize_jsonl('../data/raw_resources_merged.jsonl', '../data/normalized_resources.jsonl')
-"
-```
-
-### 5. Run the search
-
-```bash
-python hybrid_retrieve.py
-```
-
-Edit the query and coordinates in `hybrid_retrieve.py` lines 48–49 to try different searches.
-
-### 6. Evaluate
-
-```bash
-python evaluate.py     # P@3, P@5, Recall@10, MRR, nDCG@5
-python latency_eval.py # BM25 / embedding / hybrid latency
+python search.py "food pantry near me"
+python search.py "emergency shelter open tonight"
+python search.py "housing help for veterans near ann arbor"
 ```
 
 ---
 
-## Data pipeline
+## Search examples
+
+```bash
+python search.py "food pantry open tonight near me for families"
+python search.py "emergency shelter near detroit"
+python search.py "housing assistance for seniors"
+python search.py "free food ypsilanti"
+python search.py "somewhere to sleep tonight"
+```
+
+Results include organization name, address, distance, hours, eligibility, and phone number.
+
+Optional location override (defaults to Ann Arbor):
+
+```bash
+python search.py "food pantry near me" --lat 42.3314 --lon -83.0458  # Detroit
+python search.py "food pantry near me" --lat 42.2411 --lon -83.6130  # Ypsilanti
+```
+
+---
+
+## How it works
 
 ```
-scrape_foodpantries.py ──┐
-scrape_shelters.py       ├──► merge_raw.py ──► normalize_records.py ──► hybrid_retrieve.py
-fetch_api_resources.py ──┘                                                      │
-raw_resources.jsonl ─────┘                                               evaluate.py
+Query -> parse_query -> geographic pre-filter -> BM25 + Embeddings -> merge -> rerank -> ranked results
 ```
 
-Data sources target Michigan cities (Ann Arbor, Ypsilanti, Detroit, Lansing, and more). Each record is normalized into a standard schema with geocoded coordinates, hours, eligibility flags, and source metadata.
+1. **parse_query** extracts service intent (`food_pantry`, `shelter`, `housing_assistance`) and constraints (`open_now`, `near_me`, `family_friendly`, `senior_only`, `veterans_only`).
+2. **Geographic pre-filter** narrows the document pool to records within a dynamic radius (10 → 20 → 30 miles) before retrieval. Expands outward only if fewer than 5 local results are found, ensuring dense areas return only nearby results.
+3. **BM25** scores documents lexically; **sentence-transformers** (`all-MiniLM-L6-v2`) scores them semantically. Both result sets are normalized to [0, 1].
+4. **rerank** combines four signals with adaptive weights:
+
+| Signal | Base weight | With `near me` | With `open now` |
+|--------|-------------|----------------|-----------------|
+| Semantic (sem) | 0.25 | 0.25 | 0.25 |
+| Lexical (lex) | 0.25 | 0.25 | 0.25 |
+| Distance (dist) | 0.30 | 0.40 | 0.30 |
+| Availability (avail) | 0.05 | 0.05 | 0.10 |
+
+Distance uses a steepened decay of `1 / (1 + miles^1.5)`, making a 5-mile result roughly 20× better scored than a 26-mile result. Records without precise coordinates fall back to city-centroid lookup. Eligibility constraints (family, seniors, veterans) are applied as hard filters before scoring.
 
 ---
 
@@ -137,41 +132,52 @@ Data sources target Michigan cities (Ann Arbor, Ypsilanti, Detroit, Lansing, and
 | `service_category` | `food_pantry`, `shelter`, and/or `housing_assistance` |
 | `description` | Free-text description |
 | `address`, `city`, `state`, `zip` | Location fields |
-| `lat`, `lon` | Geocoded coordinates |
+| `lat`, `lon` | Geocoded coordinates (precise or city-centroid fallback) |
 | `hours_text` | Raw hours string |
-| `hours_normalized` | Structured hours by day: `{"mon": [["09:00","17:00"]]}` |
+| `hours_normalized` | Structured hours by day: `{"mon": [["09:00", "17:00"]]}` |
 | `eligibility_text` | Raw eligibility description |
 | `eligibility_flags` | `family_friendly`, `senior_only`, `veterans_only`, `appointment_required` |
 | `phone` | Contact number |
 | `source_url` | Original source page |
-| `source_type` | `nonprofit_site`, `directory`, `211_api`, `hud_api` |
+| `source_type` | `directory` or `osm` |
 | `last_verified` | ISO date of last verification |
-
----
-
-## Ranking
-
-The final score combines four signals:
-
-```
-Score = 0.35 · Sem + 0.35 · Lex + 0.20 · Dist + 0.10 · Avail
-```
-
-Weights shift when the query includes explicit constraints — `"near me"` increases the distance weight, `"open now"` increases the availability weight. Eligibility constraints (family, seniors, veterans) are applied as hard filters before scoring.
 
 ---
 
 ## Evaluation
 
-Metrics reported: **P@3**, **P@5**, **Recall@10**, **MRR**, **nDCG@5**
-
-Baselines compared:
-1. BM25 only
-2. Embeddings only
-3. Hybrid (BM25 + embeddings)
-4. Hybrid + constraint-aware reranking (full system)
+Metrics: **P@3**, **P@5**, **Recall@10**, **MRR**, **nDCG@5**
 
 Relevance is annotated on a 3-point scale: `2` = directly usable, `1` = partially useful, `0` = irrelevant.
+
+```bash
+# Run all benchmark queries and generate results for annotation
+python run_benchmark.py
+
+# After filling in labels in data/run_results.json:
+python evaluate.py     # computes all IR metrics
+
+# Latency benchmarks (per-component, over local document set)
+python latency_eval.py
+```
+
+Latest results (Ann Arbor, 10 queries):
+
+| Metric | Score |
+|--------|-------|
+| P@3 | 0.833 |
+| P@5 | 0.820 |
+| Recall@10 | 0.900 |
+| MRR | 0.850 |
+| nDCG@5 | 0.802 |
+
+Latency (local doc set, ~53 docs for Ann Arbor):
+
+| Component | Avg (ms) |
+|-----------|----------|
+| BM25 | 1.26 |
+| Embedding | 67.69 |
+| Hybrid pipeline | 19.19 |
 
 ---
 
@@ -181,7 +187,8 @@ Relevance is annotated on a 3-point scale: `2` = directly usable, `1` = partiall
 |---|---|
 | `rank-bm25` | Lexical retrieval |
 | `sentence-transformers` | Semantic embeddings (`all-MiniLM-L6-v2`) |
-| `geopy` | Address geocoding |
+| `geopy` | Address geocoding via Nominatim |
 | `beautifulsoup4` + `requests` | Web scraping |
-| `scikit-learn`, `numpy` | Score normalization |
+| `numpy` | Score normalization and vector ops |
+| `scikit-learn` | Utility math |
 | `python-dateutil` | Date/time parsing |

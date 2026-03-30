@@ -1,6 +1,30 @@
 from math import radians, sin, cos, sqrt, atan2
 from datetime import datetime
 
+# Approximate city centroids for Michigan cities commonly in the dataset.
+# Used as a fallback when a record has no lat/lon.
+MICHIGAN_CITY_COORDS = {
+    "ann arbor":       (42.2808, -83.7430),
+    "ypsilanti":       (42.2411, -83.6130),
+    "detroit":         (42.3314, -83.0458),
+    "lansing":         (42.7325, -84.5555),
+    "flint":           (43.0125, -83.6875),
+    "grand rapids":    (42.9634, -85.6681),
+    "kalamazoo":       (42.2917, -85.5872),
+    "saginaw":         (43.4195, -83.9508),
+    "pontiac":         (42.6389, -83.2910),
+    "dearborn":        (42.3223, -83.1763),
+    "sterling heights":(42.5803, -83.0302),
+    "warren":          (42.5145, -83.0146),
+    "muskegon":        (43.2342, -86.2484),
+    "battle creek":    (42.3212, -85.1797),
+    "jackson":         (42.2459, -84.4013),
+    "chelsea":         (42.3181, -84.0194),
+    "saline":          (42.1667, -83.7816),
+    "dexter":          (42.3375, -83.8863),
+    "milan":           (42.0856, -83.6785),
+}
+
 
 def haversine_miles(lat1, lon1, lat2, lon2):
     r = 3958.8
@@ -10,11 +34,24 @@ def haversine_miles(lat1, lon1, lat2, lon2):
     return 2 * r * atan2(sqrt(a), sqrt(1 - a))
 
 
+def resource_coords(resource):
+    """
+    Return (lat, lon) for a resource, falling back to city centroid if the
+    record has no precise coordinates.  Returns (None, None) if unknown.
+    """
+    lat, lon = resource.get("lat"), resource.get("lon")
+    if lat is not None and lon is not None:
+        return lat, lon
+    city = (resource.get("city") or "").lower().strip()
+    return MICHIGAN_CITY_COORDS.get(city, (None, None))
+
+
 def distance_score(resource, user_lat, user_lon):
-    if resource.get("lat") is None or resource.get("lon") is None:
+    lat, lon = resource_coords(resource)
+    if lat is None:
         return 0.0
-    dist = haversine_miles(user_lat, user_lon, resource["lat"], resource["lon"])
-    return 1.0 / (1.0 + dist)
+    dist = haversine_miles(user_lat, user_lon, lat, lon)
+    return 1.0 / (1.0 + dist ** 1.5)
 
 
 def availability_score(resource, parsed_query):
@@ -38,9 +75,6 @@ def eligibility_filter(resource, parsed_query):
     return True
 
 
-MAX_DISTANCE_MILES = 30
-
-
 def rerank_candidates(candidates, parsed_query, user_lat=None, user_lon=None):
     reranked = []
     near_me = parsed_query["constraints"].get("near_me", False)
@@ -55,16 +89,10 @@ def rerank_candidates(candidates, parsed_query, user_lat=None, user_lon=None):
         if not eligibility_filter(resource, parsed_query):
             continue
 
-        # Distance filtering — requires user location to be set.
-        resource_has_coords = resource.get("lat") and resource.get("lon")
-        if has_location:
-            if resource_has_coords:
-                # Drop anything beyond 30 miles.
-                miles = haversine_miles(user_lat, user_lon, resource["lat"], resource["lon"])
-                if miles > MAX_DISTANCE_MILES:
-                    continue
-            elif near_me:
-                # "near me" query but coordinates unknown — can't verify proximity, skip.
+        # For near_me queries, skip records with no resolvable location.
+        if has_location and near_me:
+            rlat, rlon = resource_coords(resource)
+            if rlat is None:
                 continue
 
         # Distance is always a meaningful signal for local services,
@@ -75,9 +103,9 @@ def rerank_candidates(candidates, parsed_query, user_lat=None, user_lon=None):
 
         avail = availability_score(resource, parsed_query)
 
-        w_lex  = 0.30
-        w_sem  = 0.30
-        w_dist = 0.30 if near_me else 0.20
+        w_lex  = 0.25
+        w_sem  = 0.25
+        w_dist = 0.40 if near_me else 0.30
         w_avail = 0.10 if open_now else 0.05
 
         final_score = (w_lex * lex) + (w_sem * sem) + (w_dist * dist) + (w_avail * avail)
