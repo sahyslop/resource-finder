@@ -38,10 +38,14 @@ def eligibility_filter(resource, parsed_query):
     return True
 
 
+MAX_DISTANCE_MILES = 30
+
+
 def rerank_candidates(candidates, parsed_query, user_lat=None, user_lon=None):
     reranked = []
     near_me = parsed_query["constraints"].get("near_me", False)
     open_now = parsed_query["constraints"].get("open_now", False)
+    has_location = user_lat is not None and user_lon is not None
 
     for cand in candidates:
         resource = cand["doc"]
@@ -51,15 +55,29 @@ def rerank_candidates(candidates, parsed_query, user_lat=None, user_lon=None):
         if not eligibility_filter(resource, parsed_query):
             continue
 
+        # Distance filtering — requires user location to be set.
+        resource_has_coords = resource.get("lat") and resource.get("lon")
+        if has_location:
+            if resource_has_coords:
+                # Drop anything beyond 30 miles.
+                miles = haversine_miles(user_lat, user_lon, resource["lat"], resource["lon"])
+                if miles > MAX_DISTANCE_MILES:
+                    continue
+            elif near_me:
+                # "near me" query but coordinates unknown — can't verify proximity, skip.
+                continue
+
+        # Distance is always a meaningful signal for local services,
+        # boosted further when the user explicitly says "near me".
         dist = 0.0
-        if near_me and user_lat is not None and user_lon is not None:
+        if has_location:
             dist = distance_score(resource, user_lat, user_lon)
 
         avail = availability_score(resource, parsed_query)
 
-        w_lex = 0.35
-        w_sem = 0.35
-        w_dist = 0.20 if near_me else 0.05
+        w_lex  = 0.30
+        w_sem  = 0.30
+        w_dist = 0.30 if near_me else 0.20
         w_avail = 0.10 if open_now else 0.05
 
         final_score = (w_lex * lex) + (w_sem * sem) + (w_dist * dist) + (w_avail * avail)

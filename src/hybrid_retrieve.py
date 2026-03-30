@@ -20,8 +20,8 @@ def normalize_scores(results):
 def hybrid_search(docs, bm25, model, doc_embeddings, query, user_lat=None, user_lon=None, top_k=10):
     parsed = parse_query(query)
 
-    bm25_results = normalize_scores(bm25_search(bm25, docs, query, top_k=30))
-    emb_results = normalize_scores(embedding_search(model, doc_embeddings, docs, query, top_k=30))
+    bm25_results = normalize_scores(bm25_search(bm25, docs, query, top_k=100))
+    emb_results = normalize_scores(embedding_search(model, doc_embeddings, docs, query, top_k=100))
 
     merged = defaultdict(lambda: {"doc": None, "lex_score": 0.0, "sem_score": 0.0})
 
