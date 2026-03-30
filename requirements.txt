@@ -1,0 +1,11 @@
+beautifulsoup4
+requests
+pandas
+numpy
+scikit-learn
+rank-bm25
+sentence-transformers
+spacy
+geopy
+python-dateutil
+tqdm

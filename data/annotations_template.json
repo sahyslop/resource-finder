@@ -1,0 +1,13 @@
+{
+  "q1": {
+    "query": "food pantry near me",
+    "labels": {
+      "mi_annarbor_food_001": 2,
+      "mi_ypsi_food_004": 2,
+      "mi_annarbor_housing_002": 0
+    },
+    "failure_reasons": {
+      "mi_annarbor_housing_002": "wrong_service_type"
+    }
+  }
+}

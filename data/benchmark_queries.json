@@ -1,0 +1,12 @@
+[
+  {"query_id": "q1", "query": "food pantry near me"},
+  {"query_id": "q2", "query": "food pantry open tonight for families"},
+  {"query_id": "q3", "query": "somewhere to sleep tonight"},
+  {"query_id": "q4", "query": "housing help for families"},
+  {"query_id": "q5", "query": "emergency shelter near ann arbor"},
+  {"query_id": "q6", "query": "rent help near me"},
+  {"query_id": "q7", "query": "free dinner for seniors"},
+  {"query_id": "q8", "query": "veterans housing support"},
+  {"query_id": "q9", "query": "food bank open now"},
+  {"query_id": "q10", "query": "temporary shelter nearby"}
+]

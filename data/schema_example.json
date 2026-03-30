@@ -1,0 +1,31 @@
+{
+  "resource_id": "mi_annarbor_food_001",
+  "org_name": "Hope Food Pantry",
+  "service_category": ["food_pantry"],
+  "description": "Weekly food pantry serving families in Washtenaw County.",
+  "address": "123 Main St, Ann Arbor, MI",
+  "city": "Ann Arbor",
+  "state": "MI",
+  "zip": "48104",
+  "lat": 42.2808,
+  "lon": -83.7430,
+  "hours_text": "Mon-Fri 9am-6pm",
+  "hours_normalized": {
+    "mon": [["09:00", "18:00"]],
+    "tue": [["09:00", "18:00"]],
+    "wed": [["09:00", "18:00"]],
+    "thu": [["09:00", "18:00"]],
+    "fri": [["09:00", "18:00"]]
+  },
+  "eligibility_text": "Open to families with children; ID required",
+  "eligibility_flags": {
+    "family_friendly": true,
+    "senior_only": false,
+    "veterans_only": false,
+    "appointment_required": false
+  },
+  "phone": "(734) 555-1234",
+  "source_url": "https://example.org/pantry",
+  "source_type": "nonprofit_site",
+  "last_verified": "2026-03-29"
+}
