@@ -24,7 +24,7 @@ def doc_text(doc):
     ])
 
 
-def build_embeddings(docs, jsonl_path: str = None):
+def build_embeddings(docs, jsonl_path: str = None, show_progress_bar=True):
     """
     Load or compute document embeddings.
 
@@ -43,7 +43,7 @@ def build_embeddings(docs, jsonl_path: str = None):
 
     texts = [doc_text(doc) for doc in docs]
     embeddings = np.array(
-        model.encode(texts, normalize_embeddings=True, show_progress_bar=True)
+        model.encode(texts, normalize_embeddings=True, show_progress_bar=show_progress_bar)
     )
 
     if cache:
