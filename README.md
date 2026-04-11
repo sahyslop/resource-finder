@@ -12,16 +12,19 @@ A constraint-aware local resource finder for food and housing insecurity in Mich
 src/
   collect_data.py      # scrape + OSM + geocode
   build_index.py       # merge + normalize -> search index
-  search.py            # user-facing CLI
+  search.py            # CLI + load_search_index() + run_search_with_index()
+  api.py               # Flask API server (POST /api/search, GET /api/health)
   hybrid_retrieve.py   # hybrid BM25 + embedding search (with geographic pre-filter)
   rerank.py            # constraint-aware scoring with dynamic radius + distance decay
   query_parser.py      # intent + constraint extraction
-  build_bm25.py        # lexical index
-  build_embeddings.py  # semantic embeddings
+  build_bm25.py        # lexical index (with .pkl cache)
+  build_embeddings.py  # semantic embeddings (with .npy cache)
   normalize_records.py # record normalization
   run_benchmark.py     # run all benchmark queries, output results for annotation
   evaluate.py          # IR metrics from annotated run_results.json
   latency_eval.py      # per-component latency benchmarks
+web/
+  app/page.tsx         # Next.js search UI (proxies /api/* to Flask)
 data/
   raw_food.jsonl               # scraped food pantry records (foodpantries.org)
   raw_shelters.jsonl           # scraped shelter records (shelterlistings.org)
@@ -70,13 +73,30 @@ python collect_data.py --skip-geocode
 python build_index.py
 ```
 
-**4. Search**
+**4. Search (CLI)**
 
 ```bash
 python search.py "food pantry near me"
 python search.py "emergency shelter open tonight"
 python search.py "housing help for veterans near ann arbor"
 ```
+
+**5. Run the web UI**
+
+Start the Flask API and Next.js frontend in separate terminals:
+
+```bash
+# Terminal 1 — API (loads index once at startup, ~30s first run)
+cd src
+python api.py
+
+# Terminal 2 — frontend
+cd web
+npm install   # first time only
+npm run dev
+```
+
+Open **http://localhost:3000**. Next.js proxies `/api/*` to the Flask server at `127.0.0.1:5000` automatically — no extra config needed.
 
 ---
 
@@ -187,6 +207,7 @@ Latency (local doc set, ~53 docs for Ann Arbor):
 |---|---|
 | `rank-bm25` | Lexical retrieval |
 | `sentence-transformers` | Semantic embeddings (`all-MiniLM-L6-v2`) |
+| `flask` + `flask-cors` | REST API server |
 | `geopy` | Address geocoding via Nominatim |
 | `beautifulsoup4` + `requests` | Web scraping |
 | `numpy` | Score normalization and vector ops |
