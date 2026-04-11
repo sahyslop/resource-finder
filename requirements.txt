@@ -9,3 +9,5 @@ spacy
 geopy
 python-dateutil
 tqdm
+flask
+flask-cors

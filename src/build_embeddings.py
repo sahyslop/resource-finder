@@ -22,10 +22,12 @@ def doc_text(doc):
     ])
 
 
-def build_embeddings(docs):
+def build_embeddings(docs, show_progress_bar=True):
     model = SentenceTransformer(MODEL_NAME)
     texts = [doc_text(doc) for doc in docs]
-    embeddings = model.encode(texts, normalize_embeddings=True, show_progress_bar=True)
+    embeddings = model.encode(
+        texts, normalize_embeddings=True, show_progress_bar=show_progress_bar
+    )
     return model, np.array(embeddings)
 
 
