@@ -1,121 +1,142 @@
 {
   "q1": {
     "ranked_labels": [
-      2,
-      2,
-      2,
-      2,
-      1,
-      2,
-      2,
-      1,
-      1,
-      1
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
     ]
   },
   "q2": {
     "ranked_labels": [
-      1,
-      1,
-      1,
-      1,
-      1
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
     ]
   },
   "q3": {
     "ranked_labels": [
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
     ]
   },
   "q4": {
     "ranked_labels": [
-      1,
-      1,
-      1,
-      1,
-      1
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
     ]
   },
   "q5": {
     "ranked_labels": [
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      0
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
     ]
   },
   "q6": {
     "ranked_labels": [
-      0,
-      2,
-      0,
-      0,
-      0,
-      0,
-      2,
-      0,
-      0,
-      0
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
     ]
   },
   "q7": {
-    "ranked_labels": []
+    "ranked_labels": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
   },
   "q8": {
     "ranked_labels": [
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      0,
-      1,
-      1,
-      1
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
     ]
   },
   "q9": {
     "ranked_labels": [
-      2,
-      2,
-      2,
-      1,
-      2,
-      2,
-      1,
-      1,
-      1,
-      1
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
     ]
   },
   "q10": {
     "ranked_labels": [
-      2,
-      2,
-      2,
-      1,
-      1,
-      2,
-      0,
-      2,
-      1,
-      1
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
     ]
   }
 }

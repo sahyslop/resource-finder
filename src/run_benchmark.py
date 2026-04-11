@@ -46,12 +46,13 @@ def main():
         queries = json.load(f)
 
     print("Loading index...")
-    docs = load_docs(os.path.join(DATA_DIR, "normalized_resources.jsonl"))
-    bm25 = build_bm25(docs)
+    jsonl = os.path.join(DATA_DIR, "normalized_resources.jsonl")
+    docs = load_docs(jsonl)
+    bm25 = build_bm25(docs, jsonl_path=jsonl)
 
     devnull = open(os.devnull, "w")
     with contextlib.redirect_stdout(devnull), contextlib.redirect_stderr(devnull):
-        model, doc_embeddings = build_embeddings(docs)
+        model, doc_embeddings = build_embeddings(docs, jsonl_path=jsonl)
     devnull.close()
 
     print(f"Running {len(queries)} benchmark queries...\n")

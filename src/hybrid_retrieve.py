@@ -9,15 +9,34 @@ from rerank import rerank_candidates, resource_coords, haversine_miles
 RADIUS_TIERS = [10, 20, 30]   # miles — expand outward until enough results found
 MIN_RESULTS = 5                # minimum results before stopping expansion
 
+# Cache BM25 indexes by the exact set of resource_ids they were built from.
+# Within a session (e.g. repeated queries at the same location) this avoids
+# rebuilding the lexical index from scratch on every call.
+_bm25_cache: dict = {}
+
+
+def _get_cached_bm25(search_docs):
+    key = frozenset(doc["resource_id"] for doc in search_docs)
+    if key not in _bm25_cache:
+        _bm25_cache[key] = build_bm25(search_docs)
+    return _bm25_cache[key]
+
 
 def normalize_scores(results):
     if not results:
         return []
     scores = [score for _, score in results]
-    lo, hi = min(scores), max(scores)
-    if hi == lo:
+    lo = min(scores)
+    # Clip the ceiling at the 95th percentile so one very strong BM25 or
+    # embedding match doesn't compress every other score toward zero.
+    if len(scores) >= 5:
+        sorted_scores = sorted(scores)
+        hi = sorted_scores[int(len(sorted_scores) * 0.95)]
+    else:
+        hi = max(scores)
+    if hi <= lo:
         return [(doc, 1.0) for doc, _ in results]
-    return [(doc, (score - lo) / (hi - lo)) for doc, score in results]
+    return [(doc, min((score - lo) / (hi - lo), 1.0)) for doc, score in results]
 
 
 def _local_docs(docs, user_lat, user_lon):
@@ -54,8 +73,8 @@ def hybrid_search(docs, bm25, model, doc_embeddings, query, user_lat=None, user_
     # from crowding out nearby results that score equally on text.
     if user_lat is not None and user_lon is not None:
         search_docs = _local_docs(docs, user_lat, user_lon)
-        # Build a local BM25 index over the filtered set
-        local_bm25 = build_bm25(search_docs)
+        # Reuse a cached BM25 index if this exact doc set was seen before.
+        local_bm25 = _get_cached_bm25(search_docs)
         # Embeddings: filter to the local subset by index position
         doc_ids = {doc["resource_id"] for doc in search_docs}
         local_indices = [i for i, doc in enumerate(docs) if doc["resource_id"] in doc_ids]

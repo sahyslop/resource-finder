@@ -1,4 +1,6 @@
 import json
+from pathlib import Path
+
 import numpy as np
 from sentence_transformers import SentenceTransformer
 
@@ -22,11 +24,32 @@ def doc_text(doc):
     ])
 
 
-def build_embeddings(docs):
+def build_embeddings(docs, jsonl_path: str = None):
+    """
+    Load or compute document embeddings.
+
+    If `jsonl_path` is provided, a .npy cache file is kept next to it.
+    The cache is reused as long as the JSONL hasn't been modified since
+    the cache was written — no recomputation needed between runs.
+    """
     model = SentenceTransformer(MODEL_NAME)
+
+    cache = Path(jsonl_path).with_suffix(".embeddings.npy") if jsonl_path else None
+    jsonl = Path(jsonl_path) if jsonl_path else None
+
+    if cache and cache.exists() and cache.stat().st_mtime >= jsonl.stat().st_mtime:
+        embeddings = np.load(cache)
+        return model, embeddings
+
     texts = [doc_text(doc) for doc in docs]
-    embeddings = model.encode(texts, normalize_embeddings=True, show_progress_bar=True)
-    return model, np.array(embeddings)
+    embeddings = np.array(
+        model.encode(texts, normalize_embeddings=True, show_progress_bar=True)
+    )
+
+    if cache:
+        np.save(cache, embeddings)
+
+    return model, embeddings
 
 
 def embedding_search(model, doc_embeddings, docs, query, top_k=20):

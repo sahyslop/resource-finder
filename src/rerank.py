@@ -54,25 +54,68 @@ def distance_score(resource, user_lat, user_lon):
     return 1.0 / (1.0 + dist ** 1.5)
 
 
-def availability_score(resource, parsed_query):
+def is_open_now(resource) -> bool:
+    hours = resource.get("hours_normalized", {})
+    if not hours:
+        return False
+    now = datetime.now()
+    day = now.strftime("%a").lower()  # mon, tue, wed, thu, fri, sat, sun
+    current_time = now.strftime("%H:%M")
+    slots = hours.get(day, [])
+    return any(start <= current_time <= end for start, end in slots)
+
+
+def availability_score(resource, parsed_query) -> float:
     if not parsed_query["constraints"].get("open_now"):
         return 0.5
-    if resource.get("hours_normalized"):
-        return 1.0
-    return 0.0
+    hours = resource.get("hours_normalized", {})
+    if not hours:
+        return 0.0  # no hours data — can't confirm open
+    return 1.0 if is_open_now(resource) else 0.0
 
 
-def eligibility_filter(resource, parsed_query):
+def eligibility_multiplier(resource, parsed_query) -> float:
+    """
+    Soft eligibility scoring. A confirmed match scores 1.0; a missing flag
+    scores 0.75 (penalized but not excluded — flag coverage is too sparse to
+    hard-drop results). Penalties stack if multiple constraints are unmet.
+    """
     flags = resource.get("eligibility_flags", {})
     constraints = parsed_query["constraints"]
+    multiplier = 1.0
 
     if constraints.get("family_friendly") and not flags.get("family_friendly", False):
-        return False
+        multiplier *= 0.75
     if constraints.get("senior_only") and not flags.get("senior_only", False):
-        return False
+        multiplier *= 0.75
     if constraints.get("veterans_only") and not flags.get("veterans_only", False):
-        return False
-    return True
+        multiplier *= 0.75
+
+    return multiplier
+
+
+def staleness_factor(resource) -> float:
+    """
+    Multiplicative confidence factor based on how recently the record was verified.
+    Fresh data scores 1.0; records older than a year are scaled down to 0.7.
+    Records with no date get a mild penalty (0.85) for uncertainty.
+    """
+    last_verified = resource.get("last_verified", "")
+    if not last_verified:
+        return 0.85
+    try:
+        verified_date = datetime.fromisoformat(last_verified)
+        age_days = (datetime.now() - verified_date).days
+        if age_days <= 90:
+            return 1.0
+        elif age_days <= 180:
+            return 0.9
+        elif age_days <= 365:
+            return 0.8
+        else:
+            return 0.7
+    except (ValueError, TypeError):
+        return 0.85
 
 
 def rerank_candidates(candidates, parsed_query, user_lat=None, user_lon=None):
@@ -85,9 +128,6 @@ def rerank_candidates(candidates, parsed_query, user_lat=None, user_lon=None):
         resource = cand["doc"]
         lex = cand.get("lex_score", 0.0)
         sem = cand.get("sem_score", 0.0)
-
-        if not eligibility_filter(resource, parsed_query):
-            continue
 
         # For near_me queries, skip records with no resolvable location.
         if has_location and near_me:
@@ -108,7 +148,8 @@ def rerank_candidates(candidates, parsed_query, user_lat=None, user_lon=None):
         w_dist = 0.40 if near_me else 0.30
         w_avail = 0.10 if open_now else 0.05
 
-        final_score = (w_lex * lex) + (w_sem * sem) + (w_dist * dist) + (w_avail * avail)
+        base_score = (w_lex * lex) + (w_sem * sem) + (w_dist * dist) + (w_avail * avail)
+        final_score = base_score * staleness_factor(resource) * eligibility_multiplier(resource, parsed_query)
 
         reranked.append({
             "doc": resource,

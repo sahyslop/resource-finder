@@ -4,6 +4,21 @@ from typing import Dict, Any
 
 PHONE_RE = re.compile(r'(\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4})')
 
+# Match senior/veteran flags only when the text describes the population being
+# *served*, not a casual mention (e.g. "senior parking", "veteran discount").
+SENIOR_RE = re.compile(
+    r'senior\s+(citizen|center|services?|program|only|eligible|housing|food|meal|assist)'
+    r'|for\s+seniors?'
+    r'|seniors?\s+only',
+    re.IGNORECASE,
+)
+VETERAN_RE = re.compile(
+    r'veteran\s+(services?|program|only|eligible|housing|center|assist)'
+    r'|for\s+veterans?'
+    r'|veterans?\s+only',
+    re.IGNORECASE,
+)
+
 
 def extract_phone(text: str):
     m = PHONE_RE.search(text)
@@ -14,8 +29,8 @@ def infer_eligibility_flags(text: str):
     t = text.lower()
     return {
         "family_friendly": ("family" in t or "families" in t or "children" in t),
-        "senior_only": ("senior" in t or "seniors" in t),
-        "veterans_only": ("veteran" in t or "veterans" in t),
+        "senior_only": bool(SENIOR_RE.search(text)),
+        "veterans_only": bool(VETERAN_RE.search(text)),
         "appointment_required": ("appointment required" in t)
     }
 

@@ -131,13 +131,12 @@ def main():
 
     print("\nLoading index...", end="\r")
     docs = load_docs(args.data)
-    bm25 = build_bm25(docs)
+    bm25 = build_bm25(docs, jsonl_path=args.data)
 
-    # Suppress all output during model load (tqdm, HF warnings, LOAD REPORT)
-    buf = io.StringIO()
+    # Suppress model/tqdm output. If embeddings are cached this block is near-instant.
     devnull = open(os.devnull, "w")
     with contextlib.redirect_stdout(devnull), contextlib.redirect_stderr(devnull):
-        model, doc_embeddings = build_embeddings(docs)
+        model, doc_embeddings = build_embeddings(docs, jsonl_path=args.data)
     devnull.close()
 
     results = hybrid_search(
