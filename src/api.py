@@ -26,6 +26,15 @@ from search import (
     run_search_with_index,
 )
 
+import requests
+
+from geocode_michigan import (
+    google_place_details,
+    resolve_first_michigan,
+    reverse_michigan,
+    suggest_michigan,
+)
+
 warnings.filterwarnings("ignore")
 
 MAX_TOP = 20
@@ -40,6 +49,10 @@ _docs, _bm25, _model, _doc_embeddings = load_search_index(
     quiet_embeddings=True,
 )
 print(f"Index ready: {len(_docs)} resources.", flush=True)
+print(
+    "API routes include geocode: GET /api/geocode/suggest, /api/geocode/resolve, /api/geocode/reverse",
+    flush=True,
+)
 
 app = Flask(__name__)
 
@@ -55,6 +68,63 @@ CORS(app, resources={r"/api/*": {"origins": _cors_origins}})
 @app.get("/api/health")
 def health():
     return jsonify({"status": "ok", "indexed_count": len(_docs)})
+
+
+@app.get("/api/geocode/suggest")
+def geocode_suggest():
+    q = (request.args.get("q") or "").strip()
+    if len(q) < 3:
+        return jsonify({"suggestions": []})
+    try:
+        suggestions = suggest_michigan(q)
+        return jsonify({"suggestions": suggestions})
+    except requests.RequestException:
+        return jsonify({"error": "geocoding_unavailable"}), 503
+
+
+@app.get("/api/geocode/resolve")
+def geocode_resolve():
+    q = (request.args.get("q") or "").strip()
+    if len(q) < 3:
+        return jsonify({"error": "query_too_short"}), 400
+    try:
+        row = resolve_first_michigan(q)
+    except requests.RequestException:
+        return jsonify({"error": "geocoding_unavailable"}), 503
+    if not row:
+        return jsonify({"error": "not_in_michigan"}), 404
+    return jsonify(row)
+
+
+@app.get("/api/geocode/google-place")
+def geocode_google_place():
+    """Resolve Google Places place_id → lat/lon (requires RESOURCE_FINDER_GOOGLE_PLACES_API_KEY)."""
+    place_id = (request.args.get("place_id") or "").strip()
+    if not place_id:
+        return jsonify({"error": "place_id is required"}), 400
+    try:
+        row = google_place_details(place_id)
+    except requests.RequestException:
+        return jsonify({"error": "geocoding_unavailable"}), 503
+    if not row:
+        return jsonify({"error": "not_found_or_not_michigan"}), 404
+    return jsonify(row)
+
+
+@app.get("/api/geocode/reverse")
+def geocode_reverse():
+    try:
+        lat = float(request.args.get("lat", ""))
+        lon = float(request.args.get("lon", ""))
+    except (TypeError, ValueError):
+        return jsonify({"error": "lat and lon must be numbers"}), 400
+    try:
+        row = reverse_michigan(lat, lon)
+    except requests.RequestException:
+        return jsonify({"error": "geocoding_unavailable"}), 503
+    if not row:
+        return jsonify({"error": "not_in_michigan"}), 404
+    return jsonify(row)
 
 
 @app.post("/api/search")

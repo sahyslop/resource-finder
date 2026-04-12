@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useRef, useState } from "react";
 
 /** Same-origin `/api/...` when unset (proxied by Next); else full URL to Flask. */
 function apiUrl(path: string): string {
@@ -43,6 +43,18 @@ type SearchResponse = {
 
 const DISTANCE_PRESETS_MI = [5, 10, 15, 25, 50] as const;
 
+type LocationPick = { lat: number; lon: number; label: string };
+
+type GeocodeSuggestion = {
+  label: string;
+  /** Present when using Photon / Nominatim */
+  lat?: number;
+  lon?: number;
+  /** Google Places only — use /api/geocode/google-place to resolve coordinates */
+  place_id?: string;
+  source?: string;
+};
+
 function formatCategories(categories: string[] | undefined) {
   if (!categories?.length) return "";
   return categories.map((c) => c.replace(/_/g, " ")).join(", ");
@@ -59,8 +71,11 @@ function formatAddress(r: Resource) {
 
 export default function Home() {
   const [query, setQuery] = useState("");
-  const [lat, setLat] = useState("42.2808");
-  const [lon, setLon] = useState("-83.7430");
+  const [addressInput, setAddressInput] = useState("");
+  const [locationPick, setLocationPick] = useState<LocationPick | null>(null);
+  const [suggestions, setSuggestions] = useState<GeocodeSuggestion[]>([]);
+  const [suggestLoading, setSuggestLoading] = useState(false);
+  const [suggestOpen, setSuggestOpen] = useState(false);
   const [top, setTop] = useState("5");
   const [distanceFilterOn, setDistanceFilterOn] = useState(false);
   const [maxMiles, setMaxMiles] = useState("10");
@@ -69,19 +84,152 @@ export default function Home() {
   const [error, setError] = useState<string | null>(null);
   const [data, setData] = useState<SearchResponse | null>(null);
 
-  function locateMe() {
+  const addressWrapRef = useRef<HTMLDivElement>(null);
+  const suggestDebounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    function onDocMouseDown(e: MouseEvent) {
+      if (
+        addressWrapRef.current &&
+        !addressWrapRef.current.contains(e.target as Node)
+      ) {
+        setSuggestOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", onDocMouseDown);
+    return () => document.removeEventListener("mousedown", onDocMouseDown);
+  }, []);
+
+  useEffect(() => {
+    const q = addressInput.trim();
+    if (suggestDebounceRef.current) clearTimeout(suggestDebounceRef.current);
+    if (q.length < 3) {
+      setSuggestions([]);
+      return;
+    }
+    suggestDebounceRef.current = setTimeout(async () => {
+      setSuggestLoading(true);
+      try {
+        const res = await fetch(
+          `${apiUrl("/api/geocode/suggest")}?q=${encodeURIComponent(q)}`
+        );
+        const json = (await res.json()) as {
+          suggestions?: GeocodeSuggestion[];
+          error?: string;
+        };
+        if (!res.ok) {
+          setSuggestions([]);
+          return;
+        }
+        setSuggestions(json.suggestions ?? []);
+        setSuggestOpen(true);
+      } catch {
+        setSuggestions([]);
+      } finally {
+        setSuggestLoading(false);
+      }
+    }, 400);
+    return () => {
+      if (suggestDebounceRef.current) clearTimeout(suggestDebounceRef.current);
+    };
+  }, [addressInput]);
+
+  function onAddressInputChange(value: string) {
+    setAddressInput(value);
+    setLocationPick((prev) => {
+      if (!prev) return null;
+      if (value.trim() === prev.label.trim()) return prev;
+      return null;
+    });
+  }
+
+  async function selectSuggestion(s: GeocodeSuggestion) {
+    setSuggestOpen(false);
+    if (s.place_id) {
+      try {
+        const res = await fetch(
+          `${apiUrl("/api/geocode/google-place")}?place_id=${encodeURIComponent(s.place_id)}`
+        );
+        const json = (await res.json()) as {
+          lat?: number;
+          lon?: number;
+          label?: string;
+          error?: string;
+        };
+        if (!res.ok || json.lat == null || json.lon == null || !json.label) {
+          setError(
+            "Could not load that Google Places result. Try another suggestion."
+          );
+          return;
+        }
+        setAddressInput(json.label);
+        setLocationPick({ lat: json.lat, lon: json.lon, label: json.label });
+      } catch {
+        setError("Could not load place details. Check your connection.");
+      }
+      return;
+    }
+    if (s.lat == null || s.lon == null) {
+      setError("This suggestion has no coordinates. Try another option.");
+      return;
+    }
+    setAddressInput(s.label);
+    setLocationPick({ lat: s.lat, lon: s.lon, label: s.label });
+  }
+
+  async function locateMe() {
     if (typeof navigator === "undefined" || !navigator.geolocation) {
       setError(
-        "This browser does not support location. Enter latitude and longitude manually."
+        "This browser does not support location. Enter a Michigan address instead."
       );
       return;
     }
     setLocating(true);
     setError(null);
     navigator.geolocation.getCurrentPosition(
-      (pos) => {
-        setLat(pos.coords.latitude.toFixed(6));
-        setLon(pos.coords.longitude.toFixed(6));
+      async (pos) => {
+        const lat = pos.coords.latitude;
+        const lon = pos.coords.longitude;
+        try {
+          const res = await fetch(
+            `${apiUrl("/api/geocode/reverse")}?lat=${encodeURIComponent(String(lat))}&lon=${encodeURIComponent(String(lon))}`
+          );
+          const json = (await res.json()) as {
+            error?: string;
+            label?: string;
+            lat?: number;
+            lon?: number;
+          };
+          if (!res.ok) {
+            if (res.status === 404 && json.error === "not_in_michigan") {
+              setError(
+                "Your location is outside Michigan. This tool only covers Michigan addresses."
+              );
+            } else if (res.status === 503 || json.error === "geocoding_unavailable") {
+              setError(
+                "Address lookup is temporarily unavailable. Try again in a moment."
+              );
+            } else {
+              setError("Could not verify your location. Try a Michigan address.");
+            }
+            setLocating(false);
+            return;
+          }
+          if (
+            json.label != null &&
+            json.lat != null &&
+            json.lon != null
+          ) {
+            setAddressInput(json.label);
+            setLocationPick({
+              lat: json.lat,
+              lon: json.lon,
+              label: json.label,
+            });
+          }
+        } catch {
+          setError("Could not verify your location. Try a Michigan address.");
+        }
         setLocating(false);
       },
       (err) => {
@@ -89,11 +237,11 @@ export default function Home() {
         const code = err.code;
         if (code === err.PERMISSION_DENIED) {
           setError(
-            "Location permission denied. Allow location for this site or enter coordinates manually."
+            "Location permission denied. Enter a Michigan address or allow location."
           );
         } else if (code === err.POSITION_UNAVAILABLE) {
           setError(
-            "Could not determine your position. Try again or enter coordinates manually."
+            "Could not determine your position. Try again or enter a Michigan address."
           );
         } else if (code === err.TIMEOUT) {
           setError("Location request timed out. Try again.");
@@ -115,12 +263,70 @@ export default function Home() {
       return;
     }
 
-    const latN = parseFloat(lat);
-    const lonN = parseFloat(lon);
     const topN = parseInt(top, 10);
-    if (Number.isNaN(latN) || Number.isNaN(lonN) || Number.isNaN(topN)) {
-      setError("Latitude, longitude, and number of results must be valid numbers.");
+    if (Number.isNaN(topN)) {
+      setError("Number of results must be a valid number.");
       return;
+    }
+
+    const addr = addressInput.trim();
+    if (addr.length < 3) {
+      setError("Enter a Michigan street address (at least a few characters).");
+      return;
+    }
+
+    let latN: number;
+    let lonN: number;
+    const pickMatches =
+      locationPick != null &&
+      locationPick.label.trim() === addr;
+
+    if (pickMatches && locationPick) {
+      latN = locationPick.lat;
+      lonN = locationPick.lon;
+    } else {
+      try {
+        const res = await fetch(
+          `${apiUrl("/api/geocode/resolve")}?q=${encodeURIComponent(addr)}`
+        );
+        const json = (await res.json()) as {
+          error?: string;
+          lat?: number;
+          lon?: number;
+          label?: string;
+        };
+        if (res.status === 404 && json.error === "not_in_michigan") {
+          setError(
+            "That address does not appear to be in Michigan. Choose a suggestion or enter a Michigan address."
+          );
+          return;
+        }
+        if (res.status === 503 || json.error === "geocoding_unavailable") {
+          setError(
+            "Address lookup is temporarily unavailable. Try again in a moment."
+          );
+          return;
+        }
+        if (!res.ok || json.lat == null || json.lon == null) {
+          setError(
+            json.error === "query_too_short"
+              ? "Enter more of your address."
+              : "Could not find a Michigan match for that address. Pick an option from the list or refine your search."
+          );
+          return;
+        }
+        latN = json.lat;
+        lonN = json.lon;
+        if (json.label) {
+          setLocationPick({ lat: json.lat, lon: json.lon, label: json.label });
+          setAddressInput(json.label);
+        }
+      } catch {
+        setError(
+          "Could not look up that address. Check your connection and try again."
+        );
+        return;
+      }
     }
 
     let maxMilesN: number | undefined;
@@ -205,7 +411,8 @@ export default function Home() {
             </legend>
             <div className="flex flex-wrap items-center justify-between gap-2">
               <p className="max-w-sm text-[11px] leading-snug text-stone-500 dark:text-stone-400">
-                Uses your device location in the browser. No API key or account needed.
+                Start typing a street or place name — map-style suggestions appear
+                as you go (OpenStreetMap data). Only Michigan results are listed.
               </p>
               <button
                 type="button"
@@ -216,34 +423,73 @@ export default function Home() {
                 {locating ? "Locating…" : "Use my location"}
               </button>
             </div>
-            <div className="grid gap-3 sm:grid-cols-3">
-            <label className="flex flex-col gap-1">
-              <span className="text-stone-500">Latitude</span>
-              <input
-                value={lat}
-                onChange={(e) => setLat(e.target.value)}
-                className="rounded border border-stone-200 bg-white px-2 py-1.5 dark:border-stone-700 dark:bg-stone-900"
-              />
-            </label>
-            <label className="flex flex-col gap-1">
-              <span className="text-stone-500">Longitude</span>
-              <input
-                value={lon}
-                onChange={(e) => setLon(e.target.value)}
-                className="rounded border border-stone-200 bg-white px-2 py-1.5 dark:border-stone-700 dark:bg-stone-900"
-              />
-            </label>
-            <label className="flex flex-col gap-1">
-              <span className="text-stone-500">Max results</span>
-              <input
-                value={top}
-                onChange={(e) => setTop(e.target.value)}
-                type="number"
-                min={1}
-                max={20}
-                className="rounded border border-stone-200 bg-white px-2 py-1.5 dark:border-stone-700 dark:bg-stone-900"
-              />
-            </label>
+
+            <div ref={addressWrapRef} className="space-y-1">
+              <label className="flex flex-col gap-1" htmlFor="addr">
+                <span className="text-stone-500">Your Michigan address</span>
+                <div className="relative">
+                  <input
+                    id="addr"
+                    type="text"
+                    value={addressInput}
+                    onChange={(e) => onAddressInputChange(e.target.value)}
+                    onFocus={() => {
+                      if (suggestions.length > 0) setSuggestOpen(true);
+                    }}
+                    autoComplete="off"
+                    placeholder="e.g. 200 E Liberty St, Ann Arbor, MI"
+                    className="w-full rounded border border-stone-200 bg-white px-2 py-2 pr-9 text-sm outline-none ring-stone-400 focus:ring-2 dark:border-stone-700 dark:bg-stone-900 dark:ring-stone-500"
+                  />
+                  {suggestLoading && (
+                    <span
+                      className="pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 text-[10px] text-stone-400"
+                      aria-hidden
+                    >
+                      …
+                    </span>
+                  )}
+                  {suggestOpen && suggestions.length > 0 && (
+                    <ul
+                      className="absolute left-0 right-0 top-full z-20 mt-1 max-h-56 overflow-auto rounded-lg border border-stone-200 bg-white py-1 text-left shadow-lg dark:border-stone-600 dark:bg-stone-900"
+                      role="listbox"
+                    >
+                      {suggestions.map((s, i) => (
+                        <li key={`${s.lat}-${s.lon}-${i}`}>
+                          <button
+                            type="button"
+                            role="option"
+                            className="w-full px-3 py-2 text-left text-[11px] leading-snug text-stone-800 hover:bg-stone-100 dark:text-stone-200 dark:hover:bg-stone-800"
+                            onMouseDown={(e) => e.preventDefault()}
+                            onClick={() => selectSuggestion(s)}
+                          >
+                            {s.label}
+                          </button>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              </label>
+              {locationPick &&
+                locationPick.label.trim() === addressInput.trim() && (
+                  <p className="text-[10px] text-emerald-700 dark:text-emerald-400">
+                    Michigan address confirmed — distances use this point.
+                  </p>
+                )}
+            </div>
+
+            <div className="grid gap-3 sm:max-w-[12rem]">
+              <label className="flex flex-col gap-1">
+                <span className="text-stone-500">Max results</span>
+                <input
+                  value={top}
+                  onChange={(e) => setTop(e.target.value)}
+                  type="number"
+                  min={1}
+                  max={20}
+                  className="rounded border border-stone-200 bg-white px-2 py-1.5 dark:border-stone-700 dark:bg-stone-900"
+                />
+              </label>
             </div>
 
             <div className="border-t border-stone-200 pt-3 dark:border-stone-700">
