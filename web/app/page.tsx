@@ -37,8 +37,11 @@ type SearchResponse = {
   lon: number;
   top_k: number;
   indexed_count: number;
+  max_miles?: number;
   results: SearchResultItem[];
 };
+
+const DISTANCE_PRESETS_MI = [5, 10, 15, 25, 50] as const;
 
 function formatCategories(categories: string[] | undefined) {
   if (!categories?.length) return "";
@@ -59,6 +62,8 @@ export default function Home() {
   const [lat, setLat] = useState("42.2808");
   const [lon, setLon] = useState("-83.7430");
   const [top, setTop] = useState("5");
+  const [distanceFilterOn, setDistanceFilterOn] = useState(false);
+  const [maxMiles, setMaxMiles] = useState("10");
   const [loading, setLoading] = useState(false);
   const [locating, setLocating] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -118,6 +123,16 @@ export default function Home() {
       return;
     }
 
+    let maxMilesN: number | undefined;
+    if (distanceFilterOn) {
+      const parsed = parseFloat(maxMiles);
+      if (Number.isNaN(parsed) || parsed <= 0) {
+        setError("Enter a valid distance in miles (greater than zero).");
+        return;
+      }
+      maxMilesN = parsed;
+    }
+
     setLoading(true);
     try {
       const res = await fetch(apiUrl("/api/search"), {
@@ -128,6 +143,7 @@ export default function Home() {
           lat: latN,
           lon: lonN,
           top: topN,
+          ...(maxMilesN !== undefined ? { max_miles: maxMilesN } : {}),
         }),
       });
       const json = await res.json();
@@ -229,6 +245,78 @@ export default function Home() {
               />
             </label>
             </div>
+
+            <div className="border-t border-stone-200 pt-3 dark:border-stone-700">
+              <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+                <div className="min-w-0 space-y-0.5">
+                  <p className="text-[11px] font-medium text-stone-600 dark:text-stone-300">
+                    Distance limit
+                  </p>
+                  <p className="text-[11px] leading-snug text-stone-500 dark:text-stone-400">
+                    When on, only resources with a known location within this
+                    radius are considered.
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setDistanceFilterOn((v) => !v)}
+                  aria-pressed={distanceFilterOn}
+                  className={`shrink-0 rounded-lg border px-3 py-2 text-left text-[11px] font-medium transition sm:min-w-[9.5rem] ${
+                    distanceFilterOn
+                      ? "border-emerald-700/40 bg-emerald-50 text-emerald-950 ring-1 ring-emerald-600/25 dark:border-emerald-500/30 dark:bg-emerald-950/50 dark:text-emerald-100 dark:ring-emerald-500/20"
+                      : "border-stone-300 bg-stone-100 text-stone-800 hover:bg-stone-200 dark:border-stone-600 dark:bg-stone-800 dark:text-stone-200 dark:hover:bg-stone-700"
+                  }`}
+                >
+                  <span className="block text-[10px] uppercase tracking-wide text-stone-500 dark:text-stone-400">
+                    {distanceFilterOn ? "Enabled" : "Off"}
+                  </span>
+                  <span className="mt-0.5 block">
+                    {distanceFilterOn
+                      ? `Within ${maxMiles.trim() || "…"} mi`
+                      : "Any distance"}
+                  </span>
+                </button>
+              </div>
+
+              {distanceFilterOn && (
+                <div className="mt-3 space-y-2">
+                  <p className="text-[10px] font-medium uppercase tracking-wide text-stone-500">
+                    Max distance
+                  </p>
+                  <div className="flex flex-wrap items-center gap-2">
+                    {DISTANCE_PRESETS_MI.map((m) => {
+                      const active = maxMiles.trim() === String(m);
+                      return (
+                        <button
+                          key={m}
+                          type="button"
+                          onClick={() => setMaxMiles(String(m))}
+                          className={`rounded-full border px-2.5 py-1 text-[11px] font-medium tabular-nums transition ${
+                            active
+                              ? "border-stone-800 bg-stone-800 text-white dark:border-stone-200 dark:bg-stone-200 dark:text-stone-900"
+                              : "border-stone-300 bg-white text-stone-700 hover:border-stone-400 hover:bg-stone-50 dark:border-stone-600 dark:bg-stone-900 dark:text-stone-300 dark:hover:bg-stone-800"
+                          }`}
+                        >
+                          {m} mi
+                        </button>
+                      );
+                    })}
+                    <label className="flex items-center gap-1.5 rounded-full border border-dashed border-stone-300 bg-stone-50/80 px-2.5 py-1 dark:border-stone-600 dark:bg-stone-900/40">
+                      <span className="text-[11px] text-stone-500">Other</span>
+                      <input
+                        type="number"
+                        min={1}
+                        max={250}
+                        step={1}
+                        value={maxMiles}
+                        onChange={(e) => setMaxMiles(e.target.value)}
+                        className="w-14 rounded border border-stone-200 bg-white px-1.5 py-0.5 text-center text-[11px] tabular-nums text-stone-900 dark:border-stone-600 dark:bg-stone-900 dark:text-stone-100"
+                      />
+                    </label>
+                  </div>
+                </div>
+              )}
+            </div>
           </fieldset>
         </form>
 
@@ -246,6 +334,12 @@ export default function Home() {
             <p className="text-xs text-stone-500">
               {data.results.length} result{data.results.length === 1 ? "" : "s"} ·{" "}
               {data.indexed_count} resources indexed
+              {data.max_miles != null && (
+                <>
+                  {" "}
+                  · within {data.max_miles} mi
+                </>
+              )}
             </p>
             {data.results.length === 0 ? (
               <p className="rounded-lg border border-stone-200 bg-white px-4 py-6 text-center text-sm text-stone-600 dark:border-stone-800 dark:bg-stone-900/40 dark:text-stone-400">

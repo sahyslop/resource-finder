@@ -29,6 +29,8 @@ from search import (
 warnings.filterwarnings("ignore")
 
 MAX_TOP = 20
+# Optional hard cap on "within X miles" (client-supplied); avoids abuse.
+MAX_MILES_CAP = 250.0
 
 _data_path = os.environ.get("RESOURCE_FINDER_DATA", default_data_path())
 
@@ -79,6 +81,17 @@ def search():
     if top_k > MAX_TOP:
         top_k = MAX_TOP
 
+    max_miles = None
+    if "max_miles" in body and body.get("max_miles") is not None:
+        try:
+            max_miles = float(body["max_miles"])
+        except (TypeError, ValueError):
+            return jsonify({"error": "max_miles must be a number"}), 400
+        if max_miles <= 0:
+            return jsonify({"error": "max_miles must be greater than 0"}), 400
+        if max_miles > MAX_MILES_CAP:
+            max_miles = MAX_MILES_CAP
+
     payload = run_search_with_index(
         _docs,
         _bm25,
@@ -88,6 +101,7 @@ def search():
         lat=lat,
         lon=lon,
         top_k=top_k,
+        max_miles=max_miles,
     )
     return jsonify(payload)
 

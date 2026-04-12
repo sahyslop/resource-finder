@@ -148,6 +148,7 @@ def run_search_with_index(
     lat: float = DEFAULT_LAT,
     lon: float = DEFAULT_LON,
     top_k: int = 5,
+    max_miles: float | None = None,
 ) -> dict:
     """
     Run hybrid search using a pre-built index. Returns a JSON-serializable dict.
@@ -162,12 +163,13 @@ def run_search_with_index(
         user_lat=lat,
         user_lon=lon,
         top_k=top_k,
+        max_radius_miles=max_miles,
     )
     items = [
         hybrid_result_to_json_item(i, r, lat, lon)
         for i, r in enumerate(results, start=1)
     ]
-    return {
+    out = {
         "query": q,
         "lat": lat,
         "lon": lon,
@@ -175,6 +177,9 @@ def run_search_with_index(
         "indexed_count": len(docs),
         "results": items,
     }
+    if max_miles is not None:
+        out["max_miles"] = max_miles
+    return out
 
 
 def run_search(
