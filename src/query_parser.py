@@ -118,11 +118,34 @@ def parse_constraints(query: str):
     }
 
 
+CONSTRAINT_KEYS = (
+    "open_now",
+    "near_me",
+    "family_friendly",
+    "senior_only",
+    "veterans_only",
+)
+
+
+def merge_ui_constraints(text_constraints: dict, ui: dict | None) -> dict:
+    """
+    OR-in UI toggles: if the user checks a chip, that constraint is True even
+    when their typed query does not mention it.
+    """
+    if not ui:
+        return text_constraints
+    out = {**text_constraints}
+    for k in CONSTRAINT_KEYS:
+        if ui.get(k) is True:
+            out[k] = True
+    return out
+
+
 def parse_query(query: str):
     return {
         "raw_query": query,
         "service_categories": infer_service_categories(query),
-        "constraints": parse_constraints(query)
+        "constraints": parse_constraints(query),
     }
 
 

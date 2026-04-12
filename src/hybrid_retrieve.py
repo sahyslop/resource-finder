@@ -87,8 +87,10 @@ def hybrid_search(
     user_lon=None,
     top_k=10,
     max_radius_miles=None,
+    parsed=None,
 ):
-    parsed = parse_query(query)
+    if parsed is None:
+        parsed = parse_query(query)
 
     # When we have a user location, restrict BM25 + embedding search to local docs only.
     # This prevents globally-popular text matches (e.g. every "Food Pantry" in Michigan)

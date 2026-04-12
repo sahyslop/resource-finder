@@ -41,6 +41,10 @@ MAX_TOP = 20
 # Optional hard cap on "within X miles" (client-supplied); avoids abuse.
 MAX_MILES_CAP = 250.0
 
+_CONSTRAINT_KEYS = frozenset(
+    {"open_now", "near_me", "family_friendly", "senior_only", "veterans_only"}
+)
+
 _data_path = os.environ.get("RESOURCE_FINDER_DATA", default_data_path())
 
 print("Loading search index (this may take a minute)...", flush=True)
@@ -162,6 +166,17 @@ def search():
         if max_miles > MAX_MILES_CAP:
             max_miles = MAX_MILES_CAP
 
+    constraint_overrides = None
+    raw_c = body.get("constraints")
+    if isinstance(raw_c, dict):
+        constraint_overrides = {
+            k: True
+            for k, v in raw_c.items()
+            if k in _CONSTRAINT_KEYS and v is True
+        }
+        if not constraint_overrides:
+            constraint_overrides = None
+
     payload = run_search_with_index(
         _docs,
         _bm25,
@@ -172,6 +187,7 @@ def search():
         lon=lon,
         top_k=top_k,
         max_miles=max_miles,
+        constraint_overrides=constraint_overrides,
     )
     return jsonify(payload)
 
