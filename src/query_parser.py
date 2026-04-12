@@ -1,4 +1,5 @@
 import re
+from typing import Optional
 
 SERVICE_KEYWORDS = {
     "food_pantry": [
@@ -127,7 +128,7 @@ CONSTRAINT_KEYS = (
 )
 
 
-def merge_ui_constraints(text_constraints: dict, ui: dict | None) -> dict:
+def merge_ui_constraints(text_constraints: dict, ui: Optional[dict]) -> dict:
     """
     OR-in UI toggles: if the user checks a chip, that constraint is True even
     when their typed query does not mention it.

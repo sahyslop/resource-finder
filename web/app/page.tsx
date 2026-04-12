@@ -27,8 +27,6 @@ type SearchResultItem = {
   rank: number;
   final_score: number;
   distance_label: string;
-  status: string;
-  eligibility_preview: string;
   rank_reasons: string[];
   resource: Resource;
 };
@@ -731,28 +729,12 @@ export default function Home() {
                           </dt>
                           <dd>{item.distance_label}</dd>
                         </div>
-                        <div className="flex gap-2">
-                          <dt className="shrink-0 font-medium text-stone-500">
-                            Status
-                          </dt>
-                          <dd>{item.status}</dd>
-                        </div>
                         {hours && (
                           <div className="flex gap-2">
                             <dt className="shrink-0 font-medium text-stone-500">
                               Hours
                             </dt>
                             <dd className="line-clamp-2">{hours}</dd>
-                          </div>
-                        )}
-                        {item.eligibility_preview && (
-                          <div className="flex gap-2">
-                            <dt className="shrink-0 font-medium text-stone-500">
-                              Eligibility
-                            </dt>
-                            <dd className="line-clamp-2">
-                              {item.eligibility_preview}
-                            </dd>
                           </div>
                         )}
                         {r.phone && (
