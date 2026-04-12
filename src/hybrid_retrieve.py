@@ -39,12 +39,24 @@ def normalize_scores(results):
     return [(doc, min((score - lo) / (hi - lo), 1.0)) for doc, score in results]
 
 
-def _local_docs(docs, user_lat, user_lon):
+def _local_docs(docs, user_lat, user_lon, max_radius_miles=None):
     """
     Return docs within a dynamic radius, expanding through RADIUS_TIERS until
     at least MIN_RESULTS docs with known coordinates are found.
     Docs with no resolvable location are always included.
+
+    If max_radius_miles is set, only docs with a known location within that
+    radius are returned (strict filter; unknown locations are excluded).
     """
+    if max_radius_miles is not None:
+        return [
+            doc
+            for doc in docs
+            if resource_coords(doc)[0] is not None
+            and haversine_miles(user_lat, user_lon, *resource_coords(doc))
+            <= max_radius_miles
+        ]
+
     unknown_loc = [doc for doc in docs if resource_coords(doc)[0] is None]
 
     for radius in RADIUS_TIERS:
@@ -65,14 +77,30 @@ def _local_docs(docs, user_lat, user_lon):
     return widest + unknown_loc
 
 
-def hybrid_search(docs, bm25, model, doc_embeddings, query, user_lat=None, user_lon=None, top_k=10):
-    parsed = parse_query(query)
+def hybrid_search(
+    docs,
+    bm25,
+    model,
+    doc_embeddings,
+    query,
+    user_lat=None,
+    user_lon=None,
+    top_k=10,
+    max_radius_miles=None,
+    parsed=None,
+):
+    if parsed is None:
+        parsed = parse_query(query)
 
     # When we have a user location, restrict BM25 + embedding search to local docs only.
     # This prevents globally-popular text matches (e.g. every "Food Pantry" in Michigan)
     # from crowding out nearby results that score equally on text.
     if user_lat is not None and user_lon is not None:
-        search_docs = _local_docs(docs, user_lat, user_lon)
+        search_docs = _local_docs(
+            docs, user_lat, user_lon, max_radius_miles=max_radius_miles
+        )
+        if not search_docs:
+            return []
         # Reuse a cached BM25 index if this exact doc set was seen before.
         local_bm25 = _get_cached_bm25(search_docs)
         # Embeddings: filter to the local subset by index position

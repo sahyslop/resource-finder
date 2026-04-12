@@ -27,6 +27,7 @@ from pathlib import Path
 from build_bm25 import load_docs, build_bm25
 from build_embeddings import build_embeddings
 from hybrid_retrieve import hybrid_search
+from query_parser import merge_ui_constraints, parse_query
 from rerank import haversine_miles
 
 # Default location: Ann Arbor, MI
@@ -112,18 +113,63 @@ def format_status(resource) -> str:
     return f"CLOSED today"
 
 
+def build_rank_reasons(result: dict, constraints: dict, has_location: bool) -> list[str]:
+    """Short human-readable bullets for the UI (ranking transparency)."""
+    doc = result["doc"]
+    flags = doc.get("eligibility_flags") or {}
+    reasons: list[str] = []
+
+    lex = float(result.get("lex_score", 0.0))
+    sem = float(result.get("sem_score", 0.0))
+    if max(lex, sem) >= 0.4:
+        reasons.append("Strong match to the words and meaning of your search")
+    elif max(lex, sem) >= 0.15:
+        reasons.append("Some overlap with your search wording")
+
+    dist = float(result.get("dist_score", 0.0))
+    if has_location:
+        if dist >= 0.35:
+            reasons.append("Relatively close to your address")
+        elif dist > 0:
+            reasons.append("Distance from your address is included in ranking")
+
+    avail = float(result.get("avail_score", 0.0))
+    if constraints.get("open_now"):
+        if avail >= 0.9:
+            reasons.append("Listed hours suggest open now")
+        elif avail == 0.0:
+            reasons.append(
+                "Open-now fit is uncertain; hours may be missing or outdated"
+            )
+
+    if constraints.get("family_friendly") and flags.get("family_friendly"):
+        reasons.append("Marked family-friendly where data is available")
+    if constraints.get("veterans_only") and flags.get("veterans_only"):
+        reasons.append("Veterans-specific listing where data is available")
+    if constraints.get("senior_only") and flags.get("senior_only"):
+        reasons.append("Senior-focused listing where data is available")
+
+    if not reasons:
+        reasons.append("Combined relevance, distance, and availability scores")
+    return reasons[:5]
+
+
 def hybrid_result_to_json_item(
     rank: int,
     result: dict,
     user_lat: float,
     user_lon: float,
+    *,
+    constraints: dict | None = None,
+    has_location: bool = True,
 ) -> dict:
     doc = result["doc"]
     eligibility = (doc.get("eligibility_text") or "").strip()
     clean_eligibility = (
         eligibility[:200] if eligibility and " " in eligibility else ""
     )
-    return {
+    c = constraints or {}
+    out = {
         "rank": rank,
         "final_score": float(result["final_score"]),
         "lex_score": float(result.get("lex_score", 0.0)),
@@ -134,8 +180,10 @@ def hybrid_result_to_json_item(
         "distance_label": format_distance(doc, user_lat, user_lon),
         "status": format_status(doc),
         "eligibility_preview": clean_eligibility,
+        "rank_reasons": build_rank_reasons(result, c, has_location),
         "resource": doc,
     }
+    return out
 
 
 def run_search_with_index(
@@ -148,11 +196,22 @@ def run_search_with_index(
     lat: float = DEFAULT_LAT,
     lon: float = DEFAULT_LON,
     top_k: int = 5,
+    max_miles: float | None = None,
+    constraint_overrides: dict | None = None,
 ) -> dict:
     """
     Run hybrid search using a pre-built index. Returns a JSON-serializable dict.
+    constraint_overrides: optional UI toggles merged with parsed query constraints.
     """
     q = (query or "").strip()
+    parsed_effective = parse_query(q)
+    if constraint_overrides:
+        parsed_effective = {
+            **parsed_effective,
+            "constraints": merge_ui_constraints(
+                parsed_effective["constraints"], constraint_overrides
+            ),
+        }
     results = hybrid_search(
         docs,
         bm25,
@@ -162,19 +221,34 @@ def run_search_with_index(
         user_lat=lat,
         user_lon=lon,
         top_k=top_k,
+        max_radius_miles=max_miles,
+        parsed=parsed_effective,
     )
+    constraints = parsed_effective["constraints"]
+    has_location = True
     items = [
-        hybrid_result_to_json_item(i, r, lat, lon)
+        hybrid_result_to_json_item(
+            i,
+            r,
+            lat,
+            lon,
+            constraints=constraints,
+            has_location=has_location,
+        )
         for i, r in enumerate(results, start=1)
     ]
-    return {
+    out = {
         "query": q,
         "lat": lat,
         "lon": lon,
         "top_k": top_k,
         "indexed_count": len(docs),
+        "constraints_effective": constraints,
         "results": items,
     }
+    if max_miles is not None:
+        out["max_miles"] = max_miles
+    return out
 
 
 def run_search(
