@@ -10,29 +10,34 @@ A constraint-aware local resource finder for food and housing insecurity in Mich
 
 ```
 src/
-  collect_data.py      # scrape + OSM + geocode
-  build_index.py       # merge + normalize -> search index
-  search.py            # CLI + load_search_index() + run_search_with_index()
-  api.py               # Flask API server (POST /api/search, GET /api/health)
-  hybrid_retrieve.py   # hybrid BM25 + embedding search (with geographic pre-filter)
-  rerank.py            # constraint-aware scoring with dynamic radius + distance decay
-  query_parser.py      # intent + constraint extraction
-  build_bm25.py        # lexical index (with .pkl cache)
-  build_embeddings.py  # semantic embeddings (with .npy cache)
-  normalize_records.py # record normalization
-  run_benchmark.py     # run all benchmark queries, output results for annotation
-  evaluate.py          # IR metrics from annotated run_results.json
-  latency_eval.py      # per-component latency benchmarks
+  collect_data.py        # scrape + OSM + geocode
+  build_index.py         # merge + normalize -> search index
+  search.py              # CLI + load_search_index() + run_search_with_index()
+  api.py                 # Flask API server (POST /api/search, GET /api/health)
+  hybrid_retrieve.py     # hybrid BM25 + embedding search (with geographic pre-filter)
+  rerank.py              # constraint-aware scoring with dynamic radius + distance decay
+  query_parser.py        # intent + constraint extraction
+  build_bm25.py          # lexical index (with .pkl cache)
+  build_embeddings.py    # semantic embeddings (with .npy cache)
+  normalize_records.py   # record normalization
+  run_benchmark.py       # run all benchmark queries, output results for annotation
+  evaluate.py            # IR metrics from annotated run_results.json
+  latency_eval.py        # per-component latency benchmarks
+  ablation.py            # run 4 retrieval conditions, produce pooled annotation file
+  ablation_eval.py       # compute per-condition metrics from annotated ablation pool
 web/
-  app/page.tsx         # Next.js search UI (proxies /api/* to Flask)
+  app/page.tsx           # Next.js search UI (proxies /api/* to Flask)
 data/
-  raw_food.jsonl               # scraped food pantry records (foodpantries.org)
-  raw_shelters.jsonl           # scraped shelter records (shelterlistings.org)
+  raw_resources_scraped.jsonl  # scraped food pantry records (foodpantries.org)
+  raw_resources_shelters.jsonl # scraped shelter records (shelterlistings.org)
   raw_osm.jsonl                # OpenStreetMap social facilities
   normalized_resources.jsonl   # built index (search reads this)
-  benchmark_queries.json       # 10 benchmark queries
+  benchmark_queries.json       # 30 benchmark queries
   run_results_raw.json         # ranked results with org names, for annotation
   run_results.json             # annotated relevance labels (0/1/2), read by evaluate.py
+  ablation_results_raw.json    # ranked lists per condition per query
+  ablation_pool.json           # pooled relevance judgments for ablation conditions
+  ablation_metrics.json        # per-condition P@3, MRR, nDCG@5
 ```
 
 ---
@@ -42,8 +47,8 @@ data/
 **1. Install dependencies**
 
 ```bash
-python3 -m venv venv
-source venv/bin/activate
+python3 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
@@ -139,7 +144,7 @@ Query -> parse_query -> geographic pre-filter -> BM25 + Embeddings -> merge -> r
 | Distance (dist) | 0.30 | 0.40 | 0.30 |
 | Availability (avail) | 0.05 | 0.05 | 0.10 |
 
-Distance uses a steepened decay of `1 / (1 + miles^1.5)`, making a 5-mile result roughly 20× better scored than a 26-mile result. Records without precise coordinates fall back to city-centroid lookup. Eligibility constraints (family, seniors, veterans) are applied as hard filters before scoring.
+Distance uses a steepened decay of `1 / (1 + miles^1.5)`, making a 5-mile result roughly 20× better scored than a 26-mile result. Records without precise coordinates fall back to city-centroid lookup. Eligibility constraints (family, seniors, veterans) are applied as soft multipliers: confirmed matches score 1.0, missing flags score 0.75 (penalized but not excluded — eligibility flag coverage is too sparse to hard-drop results).
 
 ---
 
@@ -177,19 +182,33 @@ python run_benchmark.py
 # After filling in labels in data/run_results.json:
 python evaluate.py     # computes all IR metrics
 
+# Ablation study — compare BM25-only, semantic-only, hybrid, full pipeline
+python ablation.py            # runs all 4 conditions, writes ablation_pool.json
+# (fill in labels in data/ablation_pool.json)
+python ablation_eval.py       # prints per-condition comparison table
+
 # Latency benchmarks (per-component, over local document set)
 python latency_eval.py
 ```
 
-Latest results (Ann Arbor, 10 queries):
+Latest results (Ann Arbor, 30 queries):
 
 | Metric | Score |
 |--------|-------|
-| P@3 | 0.833 |
-| P@5 | 0.820 |
-| Recall@10 | 0.900 |
-| MRR | 0.850 |
-| nDCG@5 | 0.802 |
+| P@3 | 0.689 |
+| P@5 | 0.693 |
+| Recall@10 | 0.833 |
+| MRR | 0.778 |
+| nDCG@5 | 0.688 |
+
+Ablation (30 queries, same geographic pre-filter across all conditions):
+
+| Condition | P@3 | MRR | nDCG@5 |
+|---|---|---|---|
+| BM25 only | 0.633 | 0.761 | 0.537 |
+| Hybrid (no rerank) | 0.778 | 0.873 | 0.651 |
+| Full pipeline | 0.789 | 0.833 | 0.739 |
+| Semantic only | 0.900 | 0.933 | 0.760 |
 
 Latency (local doc set, ~53 docs for Ann Arbor):
 
