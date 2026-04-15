@@ -1,0 +1,5815 @@
+{
+  "q1": {
+    "query": "food pantry near me",
+    "docs": {
+      "mi_ann_arbor_food_001": {
+        "resource_id": "mi_ann_arbor_food_001",
+        "org_name": "The Back Door Food Pantry",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_004": {
+        "resource_id": "mi_ypsilanti_food_004",
+        "org_name": "Hope Clinic Food Programs",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_009": {
+        "resource_id": "mi_ypsilanti_food_009",
+        "org_name": "Corner Health Center Food Pantry",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_001": {
+        "resource_id": "mi_ypsilanti_food_001",
+        "org_name": "Saint John Convent",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_005": {
+        "resource_id": "mi_ypsilanti_food_005",
+        "org_name": "Greater Shiloh Church",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_008": {
+        "resource_id": "mi_ypsilanti_food_008",
+        "org_name": "Emmanuel Lutheran Church",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_006": {
+        "resource_id": "mi_ypsilanti_food_006",
+        "org_name": "Greater Faith Mission",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_013": {
+        "resource_id": "mi_ypsilanti_food_013",
+        "org_name": "Calvary Bible Church",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_food_004": {
+        "resource_id": "mi_ann_arbor_food_004",
+        "org_name": "Northside Community Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_007": {
+        "resource_id": "mi_ypsilanti_food_007",
+        "org_name": "Family Inc",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_014": {
+        "resource_id": "mi_ypsilanti_food_014",
+        "org_name": "Brown Chapel AME",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_food_005": {
+        "resource_id": "mi_ann_arbor_food_005",
+        "org_name": "Bryant Community Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_food_002": {
+        "resource_id": "mi_ann_arbor_food_002",
+        "org_name": "Second Baptist Church  Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_010": {
+        "resource_id": "mi_ypsilanti_food_010",
+        "org_name": "Christian Love Fellowship",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_011": {
+        "resource_id": "mi_ypsilanti_food_011",
+        "org_name": "Christian Life Center Church",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_food_006": {
+        "resource_id": "mi_ann_arbor_food_006",
+        "org_name": "Ann Arbor Department Of Parks And Recreationbryant Community",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_food_003": {
+        "resource_id": "mi_ann_arbor_food_003",
+        "org_name": "Salvation Army  Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_food_008": {
+        "resource_id": "mi_ann_arbor_food_008",
+        "org_name": "Catholic Social Services Of Washtenaw County - Northside Com",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      }
+    }
+  },
+  "q2": {
+    "query": "food pantry open tonight for families",
+    "docs": {
+      "mi_ypsilanti_food_004": {
+        "resource_id": "mi_ypsilanti_food_004",
+        "org_name": "Hope Clinic Food Programs",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_001": {
+        "resource_id": "mi_ypsilanti_food_001",
+        "org_name": "Saint John Convent",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_005": {
+        "resource_id": "mi_ypsilanti_food_005",
+        "org_name": "Greater Shiloh Church",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_008": {
+        "resource_id": "mi_ypsilanti_food_008",
+        "org_name": "Emmanuel Lutheran Church",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_007": {
+        "resource_id": "mi_ypsilanti_food_007",
+        "org_name": "Family Inc",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_food_001": {
+        "resource_id": "mi_ann_arbor_food_001",
+        "org_name": "The Back Door Food Pantry",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_006": {
+        "resource_id": "mi_ypsilanti_food_006",
+        "org_name": "Greater Faith Mission",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_013": {
+        "resource_id": "mi_ypsilanti_food_013",
+        "org_name": "Calvary Bible Church",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_food_004": {
+        "resource_id": "mi_ann_arbor_food_004",
+        "org_name": "Northside Community Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_food_003": {
+        "resource_id": "mi_ann_arbor_food_003",
+        "org_name": "Salvation Army  Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_014": {
+        "resource_id": "mi_ypsilanti_food_014",
+        "org_name": "Brown Chapel AME",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_food_005": {
+        "resource_id": "mi_ann_arbor_food_005",
+        "org_name": "Bryant Community Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_012": {
+        "resource_id": "mi_ypsilanti_food_012",
+        "org_name": "Cathedral of Deliverance",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_food_002": {
+        "resource_id": "mi_ann_arbor_food_002",
+        "org_name": "Second Baptist Church  Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_011": {
+        "resource_id": "mi_ypsilanti_food_011",
+        "org_name": "Christian Life Center Church",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_015": {
+        "resource_id": "mi_ypsilanti_food_015",
+        "org_name": "Hope America",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_food_006": {
+        "resource_id": "mi_ann_arbor_food_006",
+        "org_name": "Ann Arbor Department Of Parks And Recreationbryant Community",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_009": {
+        "resource_id": "mi_ypsilanti_food_009",
+        "org_name": "Corner Health Center Food Pantry",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_010": {
+        "resource_id": "mi_ypsilanti_food_010",
+        "org_name": "Christian Love Fellowship",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_002": {
+        "resource_id": "mi_ypsilanti_food_002",
+        "org_name": "SOS Community Services",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_shelter_004": {
+        "resource_id": "mi_ann_arbor_shelter_004",
+        "org_name": "Ashley Day Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_006": {
+        "resource_id": "mi_ann_arbor_shelter_006",
+        "org_name": "Safe House Center Domestic Violence Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      }
+    }
+  },
+  "q3": {
+    "query": "somewhere to sleep tonight",
+    "docs": {
+      "mi_ypsilanti_food_009": {
+        "resource_id": "mi_ypsilanti_food_009",
+        "org_name": "Corner Health Center Food Pantry",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 0
+      },
+      "mi_ypsilanti_food_012": {
+        "resource_id": "mi_ypsilanti_food_012",
+        "org_name": "Cathedral of Deliverance",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 0
+      },
+      "mi_ypsilanti_food_014": {
+        "resource_id": "mi_ypsilanti_food_014",
+        "org_name": "Brown Chapel AME",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_food_005": {
+        "resource_id": "mi_ann_arbor_food_005",
+        "org_name": "Bryant Community Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_food_006": {
+        "resource_id": "mi_ann_arbor_food_006",
+        "org_name": "Ann Arbor Department Of Parks And Recreationbryant Community",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_002": {
+        "resource_id": "mi_ann_arbor_shelter_002",
+        "org_name": "Salvation Army Staples Family Center Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_dearbon_heights_shelter_001": {
+        "resource_id": "mi_dearbon_heights_shelter_001",
+        "org_name": "Mission Of Peace Cdc Dearbon Heights",
+        "city": "Dearbon Heights",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_011": {
+        "resource_id": "mi_ann_arbor_shelter_011",
+        "org_name": "Cranbrook Tower Nonprofit Housing Corporation Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_012": {
+        "resource_id": "mi_ann_arbor_shelter_012",
+        "org_name": "Michigan State University Extension Service- Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_013": {
+        "resource_id": "mi_ann_arbor_shelter_013",
+        "org_name": "Shelter Association Of Washtenaw County - Night Shelter Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_mi_osm_0277": {
+        "resource_id": "mi_mi_osm_0277",
+        "org_name": "Dawn Farm - Spera",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_osm_0260": {
+        "resource_id": "mi_ann_arbor_osm_0260",
+        "org_name": "Peace Neighborhood Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_osm_0067": {
+        "resource_id": "mi_ann_arbor_osm_0067",
+        "org_name": "Washtenaw Alano Club",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_osm_0066": {
+        "resource_id": "mi_ann_arbor_osm_0066",
+        "org_name": "Delonis Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_shelter_002": {
+        "resource_id": "mi_ypsilanti_shelter_002",
+        "org_name": "Dawn Farm Halfway House For Homeless Addicts",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_osm_0275": {
+        "resource_id": "mi_ann_arbor_osm_0275",
+        "org_name": "Ozone House",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_006": {
+        "resource_id": "mi_ann_arbor_shelter_006",
+        "org_name": "Safe House Center Domestic Violence Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_shelter_006": {
+        "resource_id": "mi_ypsilanti_shelter_006",
+        "org_name": "Sos Community Services - Prospect Place Family Shelter Program",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_011": {
+        "resource_id": "mi_ypsilanti_food_011",
+        "org_name": "Christian Life Center Church",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label":0
+      },
+      "mi_ypsilanti_food_002": {
+        "resource_id": "mi_ypsilanti_food_002",
+        "org_name": "SOS Community Services",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_001": {
+        "resource_id": "mi_ann_arbor_shelter_001",
+        "org_name": "Interfaith Hospitality Network Of Washtenaw County - Alpha House Family Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      }
+    }
+  },
+  "q4": {
+    "query": "housing help for families",
+    "docs": {
+      "mi_ann_arbor_shelter_007": {
+        "resource_id": "mi_ann_arbor_shelter_007",
+        "org_name": "Avalon Housing Permanent Affordable Housing",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_shelter_004": {
+        "resource_id": "mi_ypsilanti_shelter_004",
+        "org_name": "Ypsilanti Housing Commission Ypsilanti",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_shelter_008": {
+        "resource_id": "mi_ann_arbor_shelter_008",
+        "org_name": "Ann Arbor Housing Commission Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_011": {
+        "resource_id": "mi_ann_arbor_shelter_011",
+        "org_name": "Cranbrook Tower Nonprofit Housing Corporation Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_dearbon_heights_shelter_001": {
+        "resource_id": "mi_dearbon_heights_shelter_001",
+        "org_name": "Mission Of Peace Cdc Dearbon Heights",
+        "city": "Dearbon Heights",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ypsilanti_shelter_002": {
+        "resource_id": "mi_ypsilanti_shelter_002",
+        "org_name": "Dawn Farm Halfway House For Homeless Addicts",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_shelter_012": {
+        "resource_id": "mi_ann_arbor_shelter_012",
+        "org_name": "Michigan State University Extension Service- Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_shelter_005": {
+        "resource_id": "mi_ypsilanti_shelter_005",
+        "org_name": "Hope America, Inc. - A/k/a Helping Ordinary People Excel Ypsilanti",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_shelter_001": {
+        "resource_id": "mi_ann_arbor_shelter_001",
+        "org_name": "Interfaith Hospitality Network Of Washtenaw County - Alpha House Family Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_004": {
+        "resource_id": "mi_ann_arbor_shelter_004",
+        "org_name": "Ashley Day Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_shelter_003": {
+        "resource_id": "mi_ypsilanti_shelter_003",
+        "org_name": "Prospect Place Family Shelter Program",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_osm_0260": {
+        "resource_id": "mi_ann_arbor_osm_0260",
+        "org_name": "Peace Neighborhood Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_shelter_006": {
+        "resource_id": "mi_ypsilanti_shelter_006",
+        "org_name": "Sos Community Services - Prospect Place Family Shelter Program",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_shelter_014": {
+        "resource_id": "mi_ann_arbor_shelter_014",
+        "org_name": "Shelter Association Of Washtenaw County - Services Only Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_006": {
+        "resource_id": "mi_ann_arbor_shelter_006",
+        "org_name": "Safe House Center Domestic Violence Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_013": {
+        "resource_id": "mi_ann_arbor_shelter_013",
+        "org_name": "Shelter Association Of Washtenaw County - Night Shelter Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_009": {
+        "resource_id": "mi_ann_arbor_shelter_009",
+        "org_name": "Home Of New Vision Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      }
+    }
+  },
+  "q5": {
+    "query": "emergency shelter near ann arbor",
+    "docs": {
+      "mi_ann_arbor_shelter_008": {
+        "resource_id": "mi_ann_arbor_shelter_008",
+        "org_name": "Ann Arbor Housing Commission Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_food_006": {
+        "resource_id": "mi_ann_arbor_food_006",
+        "org_name": "Ann Arbor Department Of Parks And Recreationbryant Community",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_010": {
+        "resource_id": "mi_ann_arbor_shelter_010",
+        "org_name": "Michigan Ability Partners Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_009": {
+        "resource_id": "mi_ann_arbor_shelter_009",
+        "org_name": "Home Of New Vision Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_011": {
+        "resource_id": "mi_ann_arbor_shelter_011",
+        "org_name": "Cranbrook Tower Nonprofit Housing Corporation Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_012": {
+        "resource_id": "mi_ann_arbor_shelter_012",
+        "org_name": "Michigan State University Extension Service- Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_food_003": {
+        "resource_id": "mi_ann_arbor_food_003",
+        "org_name": "Salvation Army  Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_food_002": {
+        "resource_id": "mi_ann_arbor_food_002",
+        "org_name": "Second Baptist Church  Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_005": {
+        "resource_id": "mi_ann_arbor_shelter_005",
+        "org_name": "Salvation Army Of Washtenaw County Henry St",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_shelter_006": {
+        "resource_id": "mi_ypsilanti_shelter_006",
+        "org_name": "Sos Community Services - Prospect Place Family Shelter Program",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_osm_0260": {
+        "resource_id": "mi_ann_arbor_osm_0260",
+        "org_name": "Peace Neighborhood Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_osm_0066": {
+        "resource_id": "mi_ann_arbor_osm_0066",
+        "org_name": "Delonis Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_006": {
+        "resource_id": "mi_ann_arbor_shelter_006",
+        "org_name": "Safe House Center Domestic Violence Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_014": {
+        "resource_id": "mi_ann_arbor_shelter_014",
+        "org_name": "Shelter Association Of Washtenaw County - Services Only Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_mi_osm_0198": {
+        "resource_id": "mi_mi_osm_0198",
+        "org_name": "Re-Entry Center",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_002": {
+        "resource_id": "mi_ann_arbor_shelter_002",
+        "org_name": "Salvation Army Staples Family Center Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_013": {
+        "resource_id": "mi_ann_arbor_shelter_013",
+        "org_name": "Shelter Association Of Washtenaw County - Night Shelter Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      }
+    }
+  },
+  "q6": {
+    "query": "rent help near me",
+    "docs": {
+      "mi_mi_osm_0198": {
+        "resource_id": "mi_mi_osm_0198",
+        "org_name": "Re-Entry Center",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_mi_osm_0277": {
+        "resource_id": "mi_mi_osm_0277",
+        "org_name": "Dawn Farm - Spera",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_mi_osm_0389": {
+        "resource_id": "mi_mi_osm_0389",
+        "org_name": "Glacier Hills Supported Living",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_osm_0066": {
+        "resource_id": "mi_ann_arbor_osm_0066",
+        "org_name": "Delonis Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_osm_0067": {
+        "resource_id": "mi_ann_arbor_osm_0067",
+        "org_name": "Washtenaw Alano Club",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_osm_0116": {
+        "resource_id": "mi_ann_arbor_osm_0116",
+        "org_name": "MOST Ministries",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_osm_0260": {
+        "resource_id": "mi_ann_arbor_osm_0260",
+        "org_name": "Peace Neighborhood Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_osm_0275": {
+        "resource_id": "mi_ann_arbor_osm_0275",
+        "org_name": "Ozone House",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_food_001": {
+        "resource_id": "mi_ann_arbor_food_001",
+        "org_name": "The Back Door Food Pantry",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_food_002": {
+        "resource_id": "mi_ann_arbor_food_002",
+        "org_name": "Second Baptist Church  Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_006": {
+        "resource_id": "mi_ann_arbor_shelter_006",
+        "org_name": "Safe House Center Domestic Violence Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_shelter_003": {
+        "resource_id": "mi_ypsilanti_shelter_003",
+        "org_name": "Prospect Place Family Shelter Program",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_008": {
+        "resource_id": "mi_ann_arbor_shelter_008",
+        "org_name": "Ann Arbor Housing Commission Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_014": {
+        "resource_id": "mi_ann_arbor_shelter_014",
+        "org_name": "Shelter Association Of Washtenaw County - Services Only Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_013": {
+        "resource_id": "mi_ann_arbor_shelter_013",
+        "org_name": "Shelter Association Of Washtenaw County - Night Shelter Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_001": {
+        "resource_id": "mi_ann_arbor_shelter_001",
+        "org_name": "Interfaith Hospitality Network Of Washtenaw County - Alpha House Family Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_011": {
+        "resource_id": "mi_ann_arbor_shelter_011",
+        "org_name": "Cranbrook Tower Nonprofit Housing Corporation Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_003": {
+        "resource_id": "mi_ann_arbor_shelter_003",
+        "org_name": "Shelter Association Of Washtenaw County",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_009": {
+        "resource_id": "mi_ann_arbor_shelter_009",
+        "org_name": "Home Of New Vision Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_005": {
+        "resource_id": "mi_ann_arbor_shelter_005",
+        "org_name": "Salvation Army Of Washtenaw County Henry St",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      }
+    }
+  },
+  "q7": {
+    "query": "free dinner for seniors",
+    "docs": {
+      "mi_ypsilanti_shelter_002": {
+        "resource_id": "mi_ypsilanti_shelter_002",
+        "org_name": "Dawn Farm Halfway House For Homeless Addicts",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_007": {
+        "resource_id": "mi_ann_arbor_shelter_007",
+        "org_name": "Avalon Housing Permanent Affordable Housing",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_004": {
+        "resource_id": "mi_ann_arbor_shelter_004",
+        "org_name": "Ashley Day Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_006": {
+        "resource_id": "mi_ann_arbor_shelter_006",
+        "org_name": "Safe House Center Domestic Violence Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ypsilanti_shelter_004": {
+        "resource_id": "mi_ypsilanti_shelter_004",
+        "org_name": "Ypsilanti Housing Commission Ypsilanti",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ypsilanti_food_001": {
+        "resource_id": "mi_ypsilanti_food_001",
+        "org_name": "Saint John Convent",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_005": {
+        "resource_id": "mi_ypsilanti_food_005",
+        "org_name": "Greater Shiloh Church",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_008": {
+        "resource_id": "mi_ypsilanti_food_008",
+        "org_name": "Emmanuel Lutheran Church",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_shelter_008": {
+        "resource_id": "mi_ann_arbor_shelter_008",
+        "org_name": "Ann Arbor Housing Commission Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ypsilanti_food_004": {
+        "resource_id": "mi_ypsilanti_food_004",
+        "org_name": "Hope Clinic Food Programs",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_food_005": {
+        "resource_id": "mi_ann_arbor_food_005",
+        "org_name": "Bryant Community Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_food_006": {
+        "resource_id": "mi_ann_arbor_food_006",
+        "org_name": "Ann Arbor Department Of Parks And Recreationbryant Community",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_015": {
+        "resource_id": "mi_ypsilanti_food_015",
+        "org_name": "Hope America",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_014": {
+        "resource_id": "mi_ypsilanti_food_014",
+        "org_name": "Brown Chapel AME",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_010": {
+        "resource_id": "mi_ypsilanti_food_010",
+        "org_name": "Christian Love Fellowship",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_002": {
+        "resource_id": "mi_ypsilanti_food_002",
+        "org_name": "SOS Community Services",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_food_004": {
+        "resource_id": "mi_ann_arbor_food_004",
+        "org_name": "Northside Community Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_011": {
+        "resource_id": "mi_ypsilanti_food_011",
+        "org_name": "Christian Life Center Church",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_012": {
+        "resource_id": "mi_ypsilanti_food_012",
+        "org_name": "Cathedral of Deliverance",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_003": {
+        "resource_id": "mi_ypsilanti_food_003",
+        "org_name": "Salvation Army  Ypsilanti",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_007": {
+        "resource_id": "mi_ypsilanti_food_007",
+        "org_name": "Family Inc",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_shelter_013": {
+        "resource_id": "mi_ann_arbor_shelter_013",
+        "org_name": "Shelter Association Of Washtenaw County - Night Shelter Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_001": {
+        "resource_id": "mi_ann_arbor_shelter_001",
+        "org_name": "Interfaith Hospitality Network Of Washtenaw County - Alpha House Family Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_010": {
+        "resource_id": "mi_ann_arbor_shelter_010",
+        "org_name": "Michigan Ability Partners Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_009": {
+        "resource_id": "mi_ann_arbor_shelter_009",
+        "org_name": "Home Of New Vision Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_012": {
+        "resource_id": "mi_ann_arbor_shelter_012",
+        "org_name": "Michigan State University Extension Service- Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_014": {
+        "resource_id": "mi_ann_arbor_shelter_014",
+        "org_name": "Shelter Association Of Washtenaw County - Services Only Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      }
+    }
+  },
+  "q8": {
+    "query": "veterans housing support",
+    "docs": {
+      "mi_ypsilanti_shelter_004": {
+        "resource_id": "mi_ypsilanti_shelter_004",
+        "org_name": "Ypsilanti Housing Commission Ypsilanti",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_shelter_007": {
+        "resource_id": "mi_ann_arbor_shelter_007",
+        "org_name": "Avalon Housing Permanent Affordable Housing",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_008": {
+        "resource_id": "mi_ann_arbor_shelter_008",
+        "org_name": "Ann Arbor Housing Commission Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_011": {
+        "resource_id": "mi_ann_arbor_shelter_011",
+        "org_name": "Cranbrook Tower Nonprofit Housing Corporation Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_dearbon_heights_shelter_001": {
+        "resource_id": "mi_dearbon_heights_shelter_001",
+        "org_name": "Mission Of Peace Cdc Dearbon Heights",
+        "city": "Dearbon Heights",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_012": {
+        "resource_id": "mi_ann_arbor_shelter_012",
+        "org_name": "Michigan State University Extension Service- Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_shelter_005": {
+        "resource_id": "mi_ypsilanti_shelter_005",
+        "org_name": "Hope America, Inc. - A/k/a Helping Ordinary People Excel Ypsilanti",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_shelter_002": {
+        "resource_id": "mi_ypsilanti_shelter_002",
+        "org_name": "Dawn Farm Halfway House For Homeless Addicts",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_shelter_001": {
+        "resource_id": "mi_ann_arbor_shelter_001",
+        "org_name": "Interfaith Hospitality Network Of Washtenaw County - Alpha House Family Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_shelter_004": {
+        "resource_id": "mi_ann_arbor_shelter_004",
+        "org_name": "Ashley Day Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_shelter_003": {
+        "resource_id": "mi_ypsilanti_shelter_003",
+        "org_name": "Prospect Place Family Shelter Program",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_shelter_009": {
+        "resource_id": "mi_ann_arbor_shelter_009",
+        "org_name": "Home Of New Vision Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_014": {
+        "resource_id": "mi_ann_arbor_shelter_014",
+        "org_name": "Shelter Association Of Washtenaw County - Services Only Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_006": {
+        "resource_id": "mi_ann_arbor_shelter_006",
+        "org_name": "Safe House Center Domestic Violence Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_010": {
+        "resource_id": "mi_ann_arbor_shelter_010",
+        "org_name": "Michigan Ability Partners Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_013": {
+        "resource_id": "mi_ann_arbor_shelter_013",
+        "org_name": "Shelter Association Of Washtenaw County - Night Shelter Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_002": {
+        "resource_id": "mi_ann_arbor_shelter_002",
+        "org_name": "Salvation Army Staples Family Center Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      }
+    }
+  },
+  "q9": {
+    "query": "food bank open now",
+    "docs": {
+      "mi_ypsilanti_food_004": {
+        "resource_id": "mi_ypsilanti_food_004",
+        "org_name": "Hope Clinic Food Programs",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_009": {
+        "resource_id": "mi_ypsilanti_food_009",
+        "org_name": "Corner Health Center Food Pantry",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_food_001": {
+        "resource_id": "mi_ann_arbor_food_001",
+        "org_name": "The Back Door Food Pantry",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_001": {
+        "resource_id": "mi_ypsilanti_food_001",
+        "org_name": "Saint John Convent",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_005": {
+        "resource_id": "mi_ypsilanti_food_005",
+        "org_name": "Greater Shiloh Church",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_008": {
+        "resource_id": "mi_ypsilanti_food_008",
+        "org_name": "Emmanuel Lutheran Church",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_006": {
+        "resource_id": "mi_ypsilanti_food_006",
+        "org_name": "Greater Faith Mission",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_013": {
+        "resource_id": "mi_ypsilanti_food_013",
+        "org_name": "Calvary Bible Church",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_food_004": {
+        "resource_id": "mi_ann_arbor_food_004",
+        "org_name": "Northside Community Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_007": {
+        "resource_id": "mi_ypsilanti_food_007",
+        "org_name": "Family Inc",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_014": {
+        "resource_id": "mi_ypsilanti_food_014",
+        "org_name": "Brown Chapel AME",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_012": {
+        "resource_id": "mi_ypsilanti_food_012",
+        "org_name": "Cathedral of Deliverance",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_food_005": {
+        "resource_id": "mi_ann_arbor_food_005",
+        "org_name": "Bryant Community Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_011": {
+        "resource_id": "mi_ypsilanti_food_011",
+        "org_name": "Christian Life Center Church",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_food_006": {
+        "resource_id": "mi_ann_arbor_food_006",
+        "org_name": "Ann Arbor Department Of Parks And Recreationbryant Community",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_010": {
+        "resource_id": "mi_ypsilanti_food_010",
+        "org_name": "Christian Love Fellowship",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_002": {
+        "resource_id": "mi_ypsilanti_food_002",
+        "org_name": "SOS Community Services",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_food_002": {
+        "resource_id": "mi_ann_arbor_food_002",
+        "org_name": "Second Baptist Church  Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_food_003": {
+        "resource_id": "mi_ann_arbor_food_003",
+        "org_name": "Salvation Army  Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      }
+    }
+  },
+  "q10": {
+    "query": "temporary shelter nearby",
+    "docs": {
+      "mi_ann_arbor_shelter_001": {
+        "resource_id": "mi_ann_arbor_shelter_001",
+        "org_name": "Interfaith Hospitality Network Of Washtenaw County - Alpha House Family Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_013": {
+        "resource_id": "mi_ann_arbor_shelter_013",
+        "org_name": "Shelter Association Of Washtenaw County - Night Shelter Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_shelter_006": {
+        "resource_id": "mi_ypsilanti_shelter_006",
+        "org_name": "Sos Community Services - Prospect Place Family Shelter Program",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_shelter_004": {
+        "resource_id": "mi_ann_arbor_shelter_004",
+        "org_name": "Ashley Day Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_shelter_003": {
+        "resource_id": "mi_ypsilanti_shelter_003",
+        "org_name": "Prospect Place Family Shelter Program",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_mi_osm_0198": {
+        "resource_id": "mi_mi_osm_0198",
+        "org_name": "Re-Entry Center",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_osm_0116": {
+        "resource_id": "mi_ann_arbor_osm_0116",
+        "org_name": "MOST Ministries",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_006": {
+        "resource_id": "mi_ann_arbor_shelter_006",
+        "org_name": "Safe House Center Domestic Violence Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_osm_0066": {
+        "resource_id": "mi_ann_arbor_osm_0066",
+        "org_name": "Delonis Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_osm_0260": {
+        "resource_id": "mi_ann_arbor_osm_0260",
+        "org_name": "Peace Neighborhood Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_mi_osm_0389": {
+        "resource_id": "mi_mi_osm_0389",
+        "org_name": "Glacier Hills Supported Living",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_mi_osm_0277": {
+        "resource_id": "mi_mi_osm_0277",
+        "org_name": "Dawn Farm - Spera",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_osm_0275": {
+        "resource_id": "mi_ann_arbor_osm_0275",
+        "org_name": "Ozone House",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_014": {
+        "resource_id": "mi_ann_arbor_shelter_014",
+        "org_name": "Shelter Association Of Washtenaw County - Services Only Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_003": {
+        "resource_id": "mi_ann_arbor_shelter_003",
+        "org_name": "Shelter Association Of Washtenaw County",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_005": {
+        "resource_id": "mi_ann_arbor_shelter_005",
+        "org_name": "Salvation Army Of Washtenaw County Henry St",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_002": {
+        "resource_id": "mi_ann_arbor_shelter_002",
+        "org_name": "Salvation Army Staples Family Center Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      }
+    }
+  },
+  "q11": {
+    "query": "free groceries in detroit",
+    "docs": {
+      "mi_ypsilanti_shelter_001": {
+        "resource_id": "mi_ypsilanti_shelter_001",
+        "org_name": "Ozone House",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_002": {
+        "resource_id": "mi_ann_arbor_shelter_002",
+        "org_name": "Salvation Army Staples Family Center Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ypsilanti_food_012": {
+        "resource_id": "mi_ypsilanti_food_012",
+        "org_name": "Cathedral of Deliverance",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_014": {
+        "resource_id": "mi_ypsilanti_food_014",
+        "org_name": "Brown Chapel AME",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_food_005": {
+        "resource_id": "mi_ann_arbor_food_005",
+        "org_name": "Bryant Community Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_food_006": {
+        "resource_id": "mi_ann_arbor_food_006",
+        "org_name": "Ann Arbor Department Of Parks And Recreationbryant Community",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_mi_osm_0198": {
+        "resource_id": "mi_mi_osm_0198",
+        "org_name": "Re-Entry Center",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_mi_osm_0277": {
+        "resource_id": "mi_mi_osm_0277",
+        "org_name": "Dawn Farm - Spera",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_mi_osm_0389": {
+        "resource_id": "mi_mi_osm_0389",
+        "org_name": "Glacier Hills Supported Living",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_osm_0066": {
+        "resource_id": "mi_ann_arbor_osm_0066",
+        "org_name": "Delonis Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ypsilanti_food_009": {
+        "resource_id": "mi_ypsilanti_food_009",
+        "org_name": "Corner Health Center Food Pantry",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_food_004": {
+        "resource_id": "mi_ann_arbor_food_004",
+        "org_name": "Northside Community Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_007": {
+        "resource_id": "mi_ypsilanti_food_007",
+        "org_name": "Family Inc",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_food_003": {
+        "resource_id": "mi_ann_arbor_food_003",
+        "org_name": "Salvation Army  Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_food_001": {
+        "resource_id": "mi_ann_arbor_food_001",
+        "org_name": "The Back Door Food Pantry",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_005": {
+        "resource_id": "mi_ypsilanti_food_005",
+        "org_name": "Greater Shiloh Church",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_004": {
+        "resource_id": "mi_ypsilanti_food_004",
+        "org_name": "Hope Clinic Food Programs",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_food_008": {
+        "resource_id": "mi_ann_arbor_food_008",
+        "org_name": "Catholic Social Services Of Washtenaw County - Northside Com",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_011": {
+        "resource_id": "mi_ann_arbor_shelter_011",
+        "org_name": "Cranbrook Tower Nonprofit Housing Corporation Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_012": {
+        "resource_id": "mi_ann_arbor_shelter_012",
+        "org_name": "Michigan State University Extension Service- Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_010": {
+        "resource_id": "mi_ann_arbor_shelter_010",
+        "org_name": "Michigan Ability Partners Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_008": {
+        "resource_id": "mi_ann_arbor_shelter_008",
+        "org_name": "Ann Arbor Housing Commission Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      }
+    }
+  },
+  "q12": {
+    "query": "utility bill assistance near me",
+    "docs": {
+      "mi_ypsilanti_shelter_002": {
+        "resource_id": "mi_ypsilanti_shelter_002",
+        "org_name": "Dawn Farm Halfway House For Homeless Addicts",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_dearbon_heights_shelter_001": {
+        "resource_id": "mi_dearbon_heights_shelter_001",
+        "org_name": "Mission Of Peace Cdc Dearbon Heights",
+        "city": "Dearbon Heights",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_012": {
+        "resource_id": "mi_ann_arbor_shelter_012",
+        "org_name": "Michigan State University Extension Service- Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_shelter_005": {
+        "resource_id": "mi_ypsilanti_shelter_005",
+        "org_name": "Hope America, Inc. - A/k/a Helping Ordinary People Excel Ypsilanti",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_mi_osm_0198": {
+        "resource_id": "mi_mi_osm_0198",
+        "org_name": "Re-Entry Center",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_mi_osm_0277": {
+        "resource_id": "mi_mi_osm_0277",
+        "org_name": "Dawn Farm - Spera",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_mi_osm_0389": {
+        "resource_id": "mi_mi_osm_0389",
+        "org_name": "Glacier Hills Supported Living",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_osm_0066": {
+        "resource_id": "mi_ann_arbor_osm_0066",
+        "org_name": "Delonis Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_osm_0067": {
+        "resource_id": "mi_ann_arbor_osm_0067",
+        "org_name": "Washtenaw Alano Club",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_osm_0116": {
+        "resource_id": "mi_ann_arbor_osm_0116",
+        "org_name": "MOST Ministries",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_shelter_002": {
+        "resource_id": "mi_ann_arbor_shelter_002",
+        "org_name": "Salvation Army Staples Family Center Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_008": {
+        "resource_id": "mi_ann_arbor_shelter_008",
+        "org_name": "Ann Arbor Housing Commission Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_011": {
+        "resource_id": "mi_ann_arbor_shelter_011",
+        "org_name": "Cranbrook Tower Nonprofit Housing Corporation Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_shelter_003": {
+        "resource_id": "mi_ypsilanti_shelter_003",
+        "org_name": "Prospect Place Family Shelter Program",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_shelter_005": {
+        "resource_id": "mi_ann_arbor_shelter_005",
+        "org_name": "Salvation Army Of Washtenaw County Henry St",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_014": {
+        "resource_id": "mi_ann_arbor_shelter_014",
+        "org_name": "Shelter Association Of Washtenaw County - Services Only Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_shelter_006": {
+        "resource_id": "mi_ypsilanti_shelter_006",
+        "org_name": "Sos Community Services - Prospect Place Family Shelter Program",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_shelter_009": {
+        "resource_id": "mi_ann_arbor_shelter_009",
+        "org_name": "Home Of New Vision Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_010": {
+        "resource_id": "mi_ann_arbor_shelter_010",
+        "org_name": "Michigan Ability Partners Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_006": {
+        "resource_id": "mi_ann_arbor_shelter_006",
+        "org_name": "Safe House Center Domestic Violence Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_013": {
+        "resource_id": "mi_ann_arbor_shelter_013",
+        "org_name": "Shelter Association Of Washtenaw County - Night Shelter Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      }
+    }
+  },
+  "q13": {
+    "query": "emergency hotel voucher tonight",
+    "docs": {
+      "mi_ann_arbor_shelter_005": {
+        "resource_id": "mi_ann_arbor_shelter_005",
+        "org_name": "Salvation Army Of Washtenaw County Henry St",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_002": {
+        "resource_id": "mi_ann_arbor_shelter_002",
+        "org_name": "Salvation Army Staples Family Center Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_shelter_006": {
+        "resource_id": "mi_ypsilanti_shelter_006",
+        "org_name": "Sos Community Services - Prospect Place Family Shelter Program",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_012": {
+        "resource_id": "mi_ypsilanti_food_012",
+        "org_name": "Cathedral of Deliverance",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 0
+      },
+      "mi_ypsilanti_food_014": {
+        "resource_id": "mi_ypsilanti_food_014",
+        "org_name": "Brown Chapel AME",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_food_005": {
+        "resource_id": "mi_ann_arbor_food_005",
+        "org_name": "Bryant Community Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_food_006": {
+        "resource_id": "mi_ann_arbor_food_006",
+        "org_name": "Ann Arbor Department Of Parks And Recreationbryant Community",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 0
+      },
+      "mi_mi_osm_0198": {
+        "resource_id": "mi_mi_osm_0198",
+        "org_name": "Re-Entry Center",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_mi_osm_0277": {
+        "resource_id": "mi_mi_osm_0277",
+        "org_name": "Dawn Farm - Spera",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_mi_osm_0389": {
+        "resource_id": "mi_mi_osm_0389",
+        "org_name": "Glacier Hills Supported Living",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_006": {
+        "resource_id": "mi_ann_arbor_shelter_006",
+        "org_name": "Safe House Center Domestic Violence Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_osm_0066": {
+        "resource_id": "mi_ann_arbor_osm_0066",
+        "org_name": "Delonis Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_osm_0275": {
+        "resource_id": "mi_ann_arbor_osm_0275",
+        "org_name": "Ozone House",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_osm_0260": {
+        "resource_id": "mi_ann_arbor_osm_0260",
+        "org_name": "Peace Neighborhood Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_004": {
+        "resource_id": "mi_ann_arbor_shelter_004",
+        "org_name": "Ashley Day Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      }
+    }
+  },
+  "q14": {
+    "query": "free clothes and hygiene supplies",
+    "docs": {
+      "mi_ann_arbor_shelter_007": {
+        "resource_id": "mi_ann_arbor_shelter_007",
+        "org_name": "Avalon Housing Permanent Affordable Housing",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_006": {
+        "resource_id": "mi_ypsilanti_food_006",
+        "org_name": "Greater Faith Mission",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 0
+      },
+      "mi_ypsilanti_food_013": {
+        "resource_id": "mi_ypsilanti_food_013",
+        "org_name": "Calvary Bible Church",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_food_004": {
+        "resource_id": "mi_ann_arbor_food_004",
+        "org_name": "Northside Community Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_food_003": {
+        "resource_id": "mi_ann_arbor_food_003",
+        "org_name": "Salvation Army  Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_food_006": {
+        "resource_id": "mi_ann_arbor_food_006",
+        "org_name": "Ann Arbor Department Of Parks And Recreationbryant Community",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_food_001": {
+        "resource_id": "mi_ann_arbor_food_001",
+        "org_name": "The Back Door Food Pantry",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_food_002": {
+        "resource_id": "mi_ann_arbor_food_002",
+        "org_name": "Second Baptist Church  Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_food_008": {
+        "resource_id": "mi_ann_arbor_food_008",
+        "org_name": "Catholic Social Services Of Washtenaw County - Northside Com",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_shelter_005": {
+        "resource_id": "mi_ann_arbor_shelter_005",
+        "org_name": "Salvation Army Of Washtenaw County Henry St",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_osm_0260": {
+        "resource_id": "mi_ann_arbor_osm_0260",
+        "org_name": "Peace Neighborhood Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_osm_0116": {
+        "resource_id": "mi_ann_arbor_osm_0116",
+        "org_name": "MOST Ministries",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_014": {
+        "resource_id": "mi_ann_arbor_shelter_014",
+        "org_name": "Shelter Association Of Washtenaw County - Services Only Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_osm_0066": {
+        "resource_id": "mi_ann_arbor_osm_0066",
+        "org_name": "Delonis Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_shelter_001": {
+        "resource_id": "mi_ypsilanti_shelter_001",
+        "org_name": "Ozone House",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_osm_0067": {
+        "resource_id": "mi_ann_arbor_osm_0067",
+        "org_name": "Washtenaw Alano Club",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_shelter_013": {
+        "resource_id": "mi_ann_arbor_shelter_013",
+        "org_name": "Shelter Association Of Washtenaw County - Night Shelter Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_osm_0275": {
+        "resource_id": "mi_ann_arbor_osm_0275",
+        "org_name": "Ozone House",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_008": {
+        "resource_id": "mi_ypsilanti_food_008",
+        "org_name": "Emmanuel Lutheran Church",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_002": {
+        "resource_id": "mi_ann_arbor_shelter_002",
+        "org_name": "Salvation Army Staples Family Center Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_008": {
+        "resource_id": "mi_ann_arbor_shelter_008",
+        "org_name": "Ann Arbor Housing Commission Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      }
+    }
+  },
+  "q15": {
+    "query": "mental health crisis support",
+    "docs": {
+      "mi_ypsilanti_food_009": {
+        "resource_id": "mi_ypsilanti_food_009",
+        "org_name": "Corner Health Center Food Pantry",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_006": {
+        "resource_id": "mi_ann_arbor_shelter_006",
+        "org_name": "Safe House Center Domestic Violence Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_mi_osm_0198": {
+        "resource_id": "mi_mi_osm_0198",
+        "org_name": "Re-Entry Center",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_mi_osm_0277": {
+        "resource_id": "mi_mi_osm_0277",
+        "org_name": "Dawn Farm - Spera",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_mi_osm_0389": {
+        "resource_id": "mi_mi_osm_0389",
+        "org_name": "Glacier Hills Supported Living",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_osm_0066": {
+        "resource_id": "mi_ann_arbor_osm_0066",
+        "org_name": "Delonis Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_osm_0067": {
+        "resource_id": "mi_ann_arbor_osm_0067",
+        "org_name": "Washtenaw Alano Club",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_osm_0116": {
+        "resource_id": "mi_ann_arbor_osm_0116",
+        "org_name": "MOST Ministries",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_osm_0260": {
+        "resource_id": "mi_ann_arbor_osm_0260",
+        "org_name": "Peace Neighborhood Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_osm_0275": {
+        "resource_id": "mi_ann_arbor_osm_0275",
+        "org_name": "Ozone House",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ypsilanti_shelter_006": {
+        "resource_id": "mi_ypsilanti_shelter_006",
+        "org_name": "Sos Community Services - Prospect Place Family Shelter Program",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ypsilanti_shelter_005": {
+        "resource_id": "mi_ypsilanti_shelter_005",
+        "org_name": "Hope America, Inc. - A/k/a Helping Ordinary People Excel Ypsilanti",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_dearbon_heights_shelter_001": {
+        "resource_id": "mi_dearbon_heights_shelter_001",
+        "org_name": "Mission Of Peace Cdc Dearbon Heights",
+        "city": "Dearbon Heights",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_012": {
+        "resource_id": "mi_ann_arbor_shelter_012",
+        "org_name": "Michigan State University Extension Service- Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ypsilanti_food_004": {
+        "resource_id": "mi_ypsilanti_food_004",
+        "org_name": "Hope Clinic Food Programs",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_004": {
+        "resource_id": "mi_ann_arbor_shelter_004",
+        "org_name": "Ashley Day Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_010": {
+        "resource_id": "mi_ann_arbor_shelter_010",
+        "org_name": "Michigan Ability Partners Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_014": {
+        "resource_id": "mi_ann_arbor_shelter_014",
+        "org_name": "Shelter Association Of Washtenaw County - Services Only Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_013": {
+        "resource_id": "mi_ann_arbor_shelter_013",
+        "org_name": "Shelter Association Of Washtenaw County - Night Shelter Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_011": {
+        "resource_id": "mi_ann_arbor_shelter_011",
+        "org_name": "Cranbrook Tower Nonprofit Housing Corporation Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_009": {
+        "resource_id": "mi_ann_arbor_shelter_009",
+        "org_name": "Home Of New Vision Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_002": {
+        "resource_id": "mi_ann_arbor_shelter_002",
+        "org_name": "Salvation Army Staples Family Center Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      }
+    }
+  },
+  "q16": {
+    "query": "food assistance for seniors near flint",
+    "docs": {
+      "mi_ypsilanti_shelter_002": {
+        "resource_id": "mi_ypsilanti_shelter_002",
+        "org_name": "Dawn Farm Halfway House For Homeless Addicts",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_dearbon_heights_shelter_001": {
+        "resource_id": "mi_dearbon_heights_shelter_001",
+        "org_name": "Mission Of Peace Cdc Dearbon Heights",
+        "city": "Dearbon Heights",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_012": {
+        "resource_id": "mi_ann_arbor_shelter_012",
+        "org_name": "Michigan State University Extension Service- Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ypsilanti_shelter_005": {
+        "resource_id": "mi_ypsilanti_shelter_005",
+        "org_name": "Hope America, Inc. - A/k/a Helping Ordinary People Excel Ypsilanti",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ypsilanti_food_004": {
+        "resource_id": "mi_ypsilanti_food_004",
+        "org_name": "Hope Clinic Food Programs",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_001": {
+        "resource_id": "mi_ypsilanti_food_001",
+        "org_name": "Saint John Convent",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_005": {
+        "resource_id": "mi_ypsilanti_food_005",
+        "org_name": "Greater Shiloh Church",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_008": {
+        "resource_id": "mi_ypsilanti_food_008",
+        "org_name": "Emmanuel Lutheran Church",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_007": {
+        "resource_id": "mi_ypsilanti_food_007",
+        "org_name": "Family Inc",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_007": {
+        "resource_id": "mi_ann_arbor_shelter_007",
+        "org_name": "Avalon Housing Permanent Affordable Housing",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_food_006": {
+        "resource_id": "mi_ann_arbor_food_006",
+        "org_name": "Ann Arbor Department Of Parks And Recreationbryant Community",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_food_005": {
+        "resource_id": "mi_ann_arbor_food_005",
+        "org_name": "Bryant Community Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_food_004": {
+        "resource_id": "mi_ann_arbor_food_004",
+        "org_name": "Northside Community Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_food_003": {
+        "resource_id": "mi_ann_arbor_food_003",
+        "org_name": "Salvation Army  Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_food_001": {
+        "resource_id": "mi_ann_arbor_food_001",
+        "org_name": "The Back Door Food Pantry",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_014": {
+        "resource_id": "mi_ypsilanti_food_014",
+        "org_name": "Brown Chapel AME",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_food_002": {
+        "resource_id": "mi_ann_arbor_food_002",
+        "org_name": "Second Baptist Church  Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_002": {
+        "resource_id": "mi_ypsilanti_food_002",
+        "org_name": "SOS Community Services",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_food_008": {
+        "resource_id": "mi_ann_arbor_food_008",
+        "org_name": "Catholic Social Services Of Washtenaw County - Northside Com",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_010": {
+        "resource_id": "mi_ann_arbor_shelter_010",
+        "org_name": "Michigan Ability Partners Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_008": {
+        "resource_id": "mi_ann_arbor_shelter_008",
+        "org_name": "Ann Arbor Housing Commission Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_014": {
+        "resource_id": "mi_ann_arbor_shelter_014",
+        "org_name": "Shelter Association Of Washtenaw County - Services Only Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_002": {
+        "resource_id": "mi_ann_arbor_shelter_002",
+        "org_name": "Salvation Army Staples Family Center Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_013": {
+        "resource_id": "mi_ann_arbor_shelter_013",
+        "org_name": "Shelter Association Of Washtenaw County - Night Shelter Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_011": {
+        "resource_id": "mi_ann_arbor_shelter_011",
+        "org_name": "Cranbrook Tower Nonprofit Housing Corporation Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_009": {
+        "resource_id": "mi_ann_arbor_shelter_009",
+        "org_name": "Home Of New Vision Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      }
+    }
+  },
+  "q17": {
+    "query": "shelter for single women",
+    "docs": {
+      "mi_ann_arbor_shelter_004": {
+        "resource_id": "mi_ann_arbor_shelter_004",
+        "org_name": "Ashley Day Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_013": {
+        "resource_id": "mi_ann_arbor_shelter_013",
+        "org_name": "Shelter Association Of Washtenaw County - Night Shelter Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_shelter_006": {
+        "resource_id": "mi_ypsilanti_shelter_006",
+        "org_name": "Sos Community Services - Prospect Place Family Shelter Program",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_006": {
+        "resource_id": "mi_ann_arbor_shelter_006",
+        "org_name": "Safe House Center Domestic Violence Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_001": {
+        "resource_id": "mi_ann_arbor_shelter_001",
+        "org_name": "Interfaith Hospitality Network Of Washtenaw County - Alpha House Family Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_shelter_002": {
+        "resource_id": "mi_ypsilanti_shelter_002",
+        "org_name": "Dawn Farm Halfway House For Homeless Addicts",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_shelter_003": {
+        "resource_id": "mi_ypsilanti_shelter_003",
+        "org_name": "Prospect Place Family Shelter Program",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_007": {
+        "resource_id": "mi_ann_arbor_shelter_007",
+        "org_name": "Avalon Housing Permanent Affordable Housing",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_003": {
+        "resource_id": "mi_ann_arbor_shelter_003",
+        "org_name": "Shelter Association Of Washtenaw County",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_005": {
+        "resource_id": "mi_ann_arbor_shelter_005",
+        "org_name": "Salvation Army Of Washtenaw County Henry St",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_osm_0260": {
+        "resource_id": "mi_ann_arbor_osm_0260",
+        "org_name": "Peace Neighborhood Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_osm_0066": {
+        "resource_id": "mi_ann_arbor_osm_0066",
+        "org_name": "Delonis Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_osm_0116": {
+        "resource_id": "mi_ann_arbor_osm_0116",
+        "org_name": "MOST Ministries",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_mi_osm_0389": {
+        "resource_id": "mi_mi_osm_0389",
+        "org_name": "Glacier Hills Supported Living",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_mi_osm_0198": {
+        "resource_id": "mi_mi_osm_0198",
+        "org_name": "Re-Entry Center",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_mi_osm_0277": {
+        "resource_id": "mi_mi_osm_0277",
+        "org_name": "Dawn Farm - Spera",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_014": {
+        "resource_id": "mi_ann_arbor_shelter_014",
+        "org_name": "Shelter Association Of Washtenaw County - Services Only Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_008": {
+        "resource_id": "mi_ann_arbor_shelter_008",
+        "org_name": "Ann Arbor Housing Commission Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      }
+    }
+  },
+  "q18": {
+    "query": "diaper bank or baby supplies near me",
+    "docs": {
+      "mi_ypsilanti_food_015": {
+        "resource_id": "mi_ypsilanti_food_015",
+        "org_name": "Hope America",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_002": {
+        "resource_id": "mi_ypsilanti_food_002",
+        "org_name": "SOS Community Services",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 0
+      },
+      "mi_ypsilanti_food_003": {
+        "resource_id": "mi_ypsilanti_food_003",
+        "org_name": "Salvation Army  Ypsilanti",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_010": {
+        "resource_id": "mi_ypsilanti_food_010",
+        "org_name": "Christian Love Fellowship",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_011": {
+        "resource_id": "mi_ypsilanti_food_011",
+        "org_name": "Christian Life Center Church",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_shelter_002": {
+        "resource_id": "mi_ann_arbor_shelter_002",
+        "org_name": "Salvation Army Staples Family Center Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_012": {
+        "resource_id": "mi_ypsilanti_food_012",
+        "org_name": "Cathedral of Deliverance",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_014": {
+        "resource_id": "mi_ypsilanti_food_014",
+        "org_name": "Brown Chapel AME",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_food_005": {
+        "resource_id": "mi_ann_arbor_food_005",
+        "org_name": "Bryant Community Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_food_006": {
+        "resource_id": "mi_ann_arbor_food_006",
+        "org_name": "Ann Arbor Department Of Parks And Recreationbryant Community",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 0
+      },
+      "mi_ypsilanti_food_007": {
+        "resource_id": "mi_ypsilanti_food_007",
+        "org_name": "Family Inc",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_shelter_003": {
+        "resource_id": "mi_ypsilanti_shelter_003",
+        "org_name": "Prospect Place Family Shelter Program",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_food_003": {
+        "resource_id": "mi_ann_arbor_food_003",
+        "org_name": "Salvation Army  Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_009": {
+        "resource_id": "mi_ypsilanti_food_009",
+        "org_name": "Corner Health Center Food Pantry",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 0
+      },
+      "mi_ypsilanti_shelter_006": {
+        "resource_id": "mi_ypsilanti_shelter_006",
+        "org_name": "Sos Community Services - Prospect Place Family Shelter Program",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_food_004": {
+        "resource_id": "mi_ann_arbor_food_004",
+        "org_name": "Northside Community Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_mi_osm_0277": {
+        "resource_id": "mi_mi_osm_0277",
+        "org_name": "Dawn Farm - Spera",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_osm_0260": {
+        "resource_id": "mi_ann_arbor_osm_0260",
+        "org_name": "Peace Neighborhood Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_005": {
+        "resource_id": "mi_ann_arbor_shelter_005",
+        "org_name": "Salvation Army Of Washtenaw County Henry St",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_006": {
+        "resource_id": "mi_ann_arbor_shelter_006",
+        "org_name": "Safe House Center Domestic Violence Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      }
+    }
+  },
+  "q19": {
+    "query": "substance abuse treatment and housing",
+    "docs": {
+      "mi_ann_arbor_shelter_007": {
+        "resource_id": "mi_ann_arbor_shelter_007",
+        "org_name": "Avalon Housing Permanent Affordable Housing",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_shelter_004": {
+        "resource_id": "mi_ypsilanti_shelter_004",
+        "org_name": "Ypsilanti Housing Commission Ypsilanti",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_shelter_008": {
+        "resource_id": "mi_ann_arbor_shelter_008",
+        "org_name": "Ann Arbor Housing Commission Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_011": {
+        "resource_id": "mi_ann_arbor_shelter_011",
+        "org_name": "Cranbrook Tower Nonprofit Housing Corporation Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_dearbon_heights_shelter_001": {
+        "resource_id": "mi_dearbon_heights_shelter_001",
+        "org_name": "Mission Of Peace Cdc Dearbon Heights",
+        "city": "Dearbon Heights",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_012": {
+        "resource_id": "mi_ann_arbor_shelter_012",
+        "org_name": "Michigan State University Extension Service- Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ypsilanti_shelter_005": {
+        "resource_id": "mi_ypsilanti_shelter_005",
+        "org_name": "Hope America, Inc. - A/k/a Helping Ordinary People Excel Ypsilanti",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_shelter_002": {
+        "resource_id": "mi_ypsilanti_shelter_002",
+        "org_name": "Dawn Farm Halfway House For Homeless Addicts",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_001": {
+        "resource_id": "mi_ann_arbor_shelter_001",
+        "org_name": "Interfaith Hospitality Network Of Washtenaw County - Alpha House Family Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_006": {
+        "resource_id": "mi_ypsilanti_food_006",
+        "org_name": "Greater Faith Mission",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_013": {
+        "resource_id": "mi_ann_arbor_shelter_013",
+        "org_name": "Shelter Association Of Washtenaw County - Night Shelter Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_006": {
+        "resource_id": "mi_ann_arbor_shelter_006",
+        "org_name": "Safe House Center Domestic Violence Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_osm_0067": {
+        "resource_id": "mi_ann_arbor_osm_0067",
+        "org_name": "Washtenaw Alano Club",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_osm_0260": {
+        "resource_id": "mi_ann_arbor_osm_0260",
+        "org_name": "Peace Neighborhood Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_014": {
+        "resource_id": "mi_ann_arbor_shelter_014",
+        "org_name": "Shelter Association Of Washtenaw County - Services Only Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_shelter_003": {
+        "resource_id": "mi_ypsilanti_shelter_003",
+        "org_name": "Prospect Place Family Shelter Program",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_osm_0066": {
+        "resource_id": "mi_ann_arbor_osm_0066",
+        "org_name": "Delonis Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_003": {
+        "resource_id": "mi_ann_arbor_shelter_003",
+        "org_name": "Shelter Association Of Washtenaw County",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      }
+    }
+  },
+  "q20": {
+    "query": "soup kitchen open on weekends",
+    "docs": {
+      "mi_ann_arbor_shelter_014": {
+        "resource_id": "mi_ann_arbor_shelter_014",
+        "org_name": "Shelter Association Of Washtenaw County - Services Only Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ypsilanti_food_015": {
+        "resource_id": "mi_ypsilanti_food_015",
+        "org_name": "Hope America",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_002": {
+        "resource_id": "mi_ypsilanti_food_002",
+        "org_name": "SOS Community Services",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_003": {
+        "resource_id": "mi_ypsilanti_food_003",
+        "org_name": "Salvation Army  Ypsilanti",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_010": {
+        "resource_id": "mi_ypsilanti_food_010",
+        "org_name": "Christian Love Fellowship",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_011": {
+        "resource_id": "mi_ypsilanti_food_011",
+        "org_name": "Christian Life Center Church",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_012": {
+        "resource_id": "mi_ypsilanti_food_012",
+        "org_name": "Cathedral of Deliverance",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_014": {
+        "resource_id": "mi_ypsilanti_food_014",
+        "org_name": "Brown Chapel AME",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_food_005": {
+        "resource_id": "mi_ann_arbor_food_005",
+        "org_name": "Bryant Community Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_food_006": {
+        "resource_id": "mi_ann_arbor_food_006",
+        "org_name": "Ann Arbor Department Of Parks And Recreationbryant Community",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_food_001": {
+        "resource_id": "mi_ann_arbor_food_001",
+        "org_name": "The Back Door Food Pantry",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_013": {
+        "resource_id": "mi_ypsilanti_food_013",
+        "org_name": "Calvary Bible Church",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_009": {
+        "resource_id": "mi_ypsilanti_food_009",
+        "org_name": "Corner Health Center Food Pantry",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_food_004": {
+        "resource_id": "mi_ann_arbor_food_004",
+        "org_name": "Northside Community Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      }
+    }
+  },
+  "q21": {
+    "query": "eviction prevention rental help",
+    "docs": {
+      "mi_ypsilanti_shelter_003": {
+        "resource_id": "mi_ypsilanti_shelter_003",
+        "org_name": "Prospect Place Family Shelter Program",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_mi_osm_0198": {
+        "resource_id": "mi_mi_osm_0198",
+        "org_name": "Re-Entry Center",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_mi_osm_0277": {
+        "resource_id": "mi_mi_osm_0277",
+        "org_name": "Dawn Farm - Spera",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_mi_osm_0389": {
+        "resource_id": "mi_mi_osm_0389",
+        "org_name": "Glacier Hills Supported Living",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_osm_0066": {
+        "resource_id": "mi_ann_arbor_osm_0066",
+        "org_name": "Delonis Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_osm_0067": {
+        "resource_id": "mi_ann_arbor_osm_0067",
+        "org_name": "Washtenaw Alano Club",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_osm_0116": {
+        "resource_id": "mi_ann_arbor_osm_0116",
+        "org_name": "MOST Ministries",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_osm_0260": {
+        "resource_id": "mi_ann_arbor_osm_0260",
+        "org_name": "Peace Neighborhood Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_osm_0275": {
+        "resource_id": "mi_ann_arbor_osm_0275",
+        "org_name": "Ozone House",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_food_001": {
+        "resource_id": "mi_ann_arbor_food_001",
+        "org_name": "The Back Door Food Pantry",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_001": {
+        "resource_id": "mi_ann_arbor_shelter_001",
+        "org_name": "Interfaith Hospitality Network Of Washtenaw County - Alpha House Family Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_013": {
+        "resource_id": "mi_ann_arbor_shelter_013",
+        "org_name": "Shelter Association Of Washtenaw County - Night Shelter Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_006": {
+        "resource_id": "mi_ann_arbor_shelter_006",
+        "org_name": "Safe House Center Domestic Violence Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_008": {
+        "resource_id": "mi_ann_arbor_shelter_008",
+        "org_name": "Ann Arbor Housing Commission Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_007": {
+        "resource_id": "mi_ann_arbor_shelter_007",
+        "org_name": "Avalon Housing Permanent Affordable Housing",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_014": {
+        "resource_id": "mi_ann_arbor_shelter_014",
+        "org_name": "Shelter Association Of Washtenaw County - Services Only Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_011": {
+        "resource_id": "mi_ann_arbor_shelter_011",
+        "org_name": "Cranbrook Tower Nonprofit Housing Corporation Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_012": {
+        "resource_id": "mi_ann_arbor_shelter_012",
+        "org_name": "Michigan State University Extension Service- Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_003": {
+        "resource_id": "mi_ann_arbor_shelter_003",
+        "org_name": "Shelter Association Of Washtenaw County",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      }
+    }
+  },
+  "q22": {
+    "query": "veterans food assistance near grand rapids",
+    "docs": {
+      "mi_ypsilanti_shelter_002": {
+        "resource_id": "mi_ypsilanti_shelter_002",
+        "org_name": "Dawn Farm Halfway House For Homeless Addicts",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_dearbon_heights_shelter_001": {
+        "resource_id": "mi_dearbon_heights_shelter_001",
+        "org_name": "Mission Of Peace Cdc Dearbon Heights",
+        "city": "Dearbon Heights",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_012": {
+        "resource_id": "mi_ann_arbor_shelter_012",
+        "org_name": "Michigan State University Extension Service- Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ypsilanti_shelter_005": {
+        "resource_id": "mi_ypsilanti_shelter_005",
+        "org_name": "Hope America, Inc. - A/k/a Helping Ordinary People Excel Ypsilanti",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ypsilanti_food_004": {
+        "resource_id": "mi_ypsilanti_food_004",
+        "org_name": "Hope Clinic Food Programs",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_009": {
+        "resource_id": "mi_ypsilanti_food_009",
+        "org_name": "Corner Health Center Food Pantry",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_food_001": {
+        "resource_id": "mi_ann_arbor_food_001",
+        "org_name": "The Back Door Food Pantry",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_004": {
+        "resource_id": "mi_ann_arbor_shelter_004",
+        "org_name": "Ashley Day Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ypsilanti_food_001": {
+        "resource_id": "mi_ypsilanti_food_001",
+        "org_name": "Saint John Convent",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_005": {
+        "resource_id": "mi_ypsilanti_food_005",
+        "org_name": "Greater Shiloh Church",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_food_006": {
+        "resource_id": "mi_ann_arbor_food_006",
+        "org_name": "Ann Arbor Department Of Parks And Recreationbryant Community",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_food_005": {
+        "resource_id": "mi_ann_arbor_food_005",
+        "org_name": "Bryant Community Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_food_003": {
+        "resource_id": "mi_ann_arbor_food_003",
+        "org_name": "Salvation Army  Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_006": {
+        "resource_id": "mi_ypsilanti_food_006",
+        "org_name": "Greater Faith Mission",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_shelter_003": {
+        "resource_id": "mi_ypsilanti_shelter_003",
+        "org_name": "Prospect Place Family Shelter Program",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_food_004": {
+        "resource_id": "mi_ann_arbor_food_004",
+        "org_name": "Northside Community Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_010": {
+        "resource_id": "mi_ann_arbor_shelter_010",
+        "org_name": "Michigan Ability Partners Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ypsilanti_food_010": {
+        "resource_id": "mi_ypsilanti_food_010",
+        "org_name": "Christian Love Fellowship",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_shelter_002": {
+        "resource_id": "mi_ann_arbor_shelter_002",
+        "org_name": "Salvation Army Staples Family Center Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_008": {
+        "resource_id": "mi_ann_arbor_shelter_008",
+        "org_name": "Ann Arbor Housing Commission Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_014": {
+        "resource_id": "mi_ann_arbor_shelter_014",
+        "org_name": "Shelter Association Of Washtenaw County - Services Only Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_009": {
+        "resource_id": "mi_ann_arbor_shelter_009",
+        "org_name": "Home Of New Vision Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_005": {
+        "resource_id": "mi_ann_arbor_shelter_005",
+        "org_name": "Salvation Army Of Washtenaw County Henry St",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_013": {
+        "resource_id": "mi_ann_arbor_shelter_013",
+        "org_name": "Shelter Association Of Washtenaw County - Night Shelter Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_011": {
+        "resource_id": "mi_ann_arbor_shelter_011",
+        "org_name": "Cranbrook Tower Nonprofit Housing Corporation Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_003": {
+        "resource_id": "mi_ann_arbor_shelter_003",
+        "org_name": "Shelter Association Of Washtenaw County",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      }
+    }
+  },
+  "q23": {
+    "query": "warm shelter for families in kalamazoo",
+    "docs": {
+      "mi_ann_arbor_shelter_002": {
+        "resource_id": "mi_ann_arbor_shelter_002",
+        "org_name": "Salvation Army Staples Family Center Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ypsilanti_shelter_001": {
+        "resource_id": "mi_ypsilanti_shelter_001",
+        "org_name": "Ozone House",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_004": {
+        "resource_id": "mi_ann_arbor_shelter_004",
+        "org_name": "Ashley Day Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_013": {
+        "resource_id": "mi_ann_arbor_shelter_013",
+        "org_name": "Shelter Association Of Washtenaw County - Night Shelter Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ypsilanti_shelter_006": {
+        "resource_id": "mi_ypsilanti_shelter_006",
+        "org_name": "Sos Community Services - Prospect Place Family Shelter Program",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_006": {
+        "resource_id": "mi_ann_arbor_shelter_006",
+        "org_name": "Safe House Center Domestic Violence Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ypsilanti_food_012": {
+        "resource_id": "mi_ypsilanti_food_012",
+        "org_name": "Cathedral of Deliverance",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 0
+      },
+      "mi_ypsilanti_food_014": {
+        "resource_id": "mi_ypsilanti_food_014",
+        "org_name": "Brown Chapel AME",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_food_005": {
+        "resource_id": "mi_ann_arbor_food_005",
+        "org_name": "Bryant Community Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_001": {
+        "resource_id": "mi_ann_arbor_shelter_001",
+        "org_name": "Interfaith Hospitality Network Of Washtenaw County - Alpha House Family Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_mi_osm_0389": {
+        "resource_id": "mi_mi_osm_0389",
+        "org_name": "Glacier Hills Supported Living",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_osm_0260": {
+        "resource_id": "mi_ann_arbor_osm_0260",
+        "org_name": "Peace Neighborhood Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_osm_0116": {
+        "resource_id": "mi_ann_arbor_osm_0116",
+        "org_name": "MOST Ministries",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_mi_osm_0198": {
+        "resource_id": "mi_mi_osm_0198",
+        "org_name": "Re-Entry Center",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_osm_0275": {
+        "resource_id": "mi_ann_arbor_osm_0275",
+        "org_name": "Ozone House",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_mi_osm_0277": {
+        "resource_id": "mi_mi_osm_0277",
+        "org_name": "Dawn Farm - Spera",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_014": {
+        "resource_id": "mi_ann_arbor_shelter_014",
+        "org_name": "Shelter Association Of Washtenaw County - Services Only Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_osm_0066": {
+        "resource_id": "mi_ann_arbor_osm_0066",
+        "org_name": "Delonis Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ypsilanti_shelter_003": {
+        "resource_id": "mi_ypsilanti_shelter_003",
+        "org_name": "Prospect Place Family Shelter Program",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_003": {
+        "resource_id": "mi_ann_arbor_shelter_003",
+        "org_name": "Shelter Association Of Washtenaw County",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_008": {
+        "resource_id": "mi_ann_arbor_shelter_008",
+        "org_name": "Ann Arbor Housing Commission Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_005": {
+        "resource_id": "mi_ann_arbor_shelter_005",
+        "org_name": "Salvation Army Of Washtenaw County Henry St",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_007": {
+        "resource_id": "mi_ann_arbor_shelter_007",
+        "org_name": "Avalon Housing Permanent Affordable Housing",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      }
+    }
+  },
+  "q24": {
+    "query": "heating assistance michigan winter",
+    "docs": {
+      "mi_ann_arbor_shelter_012": {
+        "resource_id": "mi_ann_arbor_shelter_012",
+        "org_name": "Michigan State University Extension Service- Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_shelter_010": {
+        "resource_id": "mi_ann_arbor_shelter_010",
+        "org_name": "Michigan Ability Partners Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_shelter_002": {
+        "resource_id": "mi_ypsilanti_shelter_002",
+        "org_name": "Dawn Farm Halfway House For Homeless Addicts",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_dearbon_heights_shelter_001": {
+        "resource_id": "mi_dearbon_heights_shelter_001",
+        "org_name": "Mission Of Peace Cdc Dearbon Heights",
+        "city": "Dearbon Heights",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ypsilanti_shelter_005": {
+        "resource_id": "mi_ypsilanti_shelter_005",
+        "org_name": "Hope America, Inc. - A/k/a Helping Ordinary People Excel Ypsilanti",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_mi_osm_0198": {
+        "resource_id": "mi_mi_osm_0198",
+        "org_name": "Re-Entry Center",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_mi_osm_0277": {
+        "resource_id": "mi_mi_osm_0277",
+        "org_name": "Dawn Farm - Spera",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_mi_osm_0389": {
+        "resource_id": "mi_mi_osm_0389",
+        "org_name": "Glacier Hills Supported Living",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_osm_0066": {
+        "resource_id": "mi_ann_arbor_osm_0066",
+        "org_name": "Delonis Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_osm_0067": {
+        "resource_id": "mi_ann_arbor_osm_0067",
+        "org_name": "Washtenaw Alano Club",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label":1
+      },
+      "mi_ann_arbor_food_005": {
+        "resource_id": "mi_ann_arbor_food_005",
+        "org_name": "Bryant Community Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_008": {
+        "resource_id": "mi_ann_arbor_shelter_008",
+        "org_name": "Ann Arbor Housing Commission Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_food_006": {
+        "resource_id": "mi_ann_arbor_food_006",
+        "org_name": "Ann Arbor Department Of Parks And Recreationbryant Community",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_food_004": {
+        "resource_id": "mi_ann_arbor_food_004",
+        "org_name": "Northside Community Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 0
+      },
+      "mi_ypsilanti_food_012": {
+        "resource_id": "mi_ypsilanti_food_012",
+        "org_name": "Cathedral of Deliverance",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_food_008": {
+        "resource_id": "mi_ann_arbor_food_008",
+        "org_name": "Catholic Social Services Of Washtenaw County - Northside Com",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_food_003": {
+        "resource_id": "mi_ann_arbor_food_003",
+        "org_name": "Salvation Army  Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 0
+      },
+      "mi_ypsilanti_food_004": {
+        "resource_id": "mi_ypsilanti_food_004",
+        "org_name": "Hope Clinic Food Programs",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_014": {
+        "resource_id": "mi_ann_arbor_shelter_014",
+        "org_name": "Shelter Association Of Washtenaw County - Services Only Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_shelter_009": {
+        "resource_id": "mi_ann_arbor_shelter_009",
+        "org_name": "Home Of New Vision Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_shelter_001": {
+        "resource_id": "mi_ann_arbor_shelter_001",
+        "org_name": "Interfaith Hospitality Network Of Washtenaw County - Alpha House Family Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_013": {
+        "resource_id": "mi_ann_arbor_shelter_013",
+        "org_name": "Shelter Association Of Washtenaw County - Night Shelter Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_shelter_002": {
+        "resource_id": "mi_ann_arbor_shelter_002",
+        "org_name": "Salvation Army Staples Family Center Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_shelter_011": {
+        "resource_id": "mi_ann_arbor_shelter_011",
+        "org_name": "Cranbrook Tower Nonprofit Housing Corporation Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      }
+    }
+  },
+  "q25": {
+    "query": "transitional housing after domestic violence",
+    "docs": {
+      "mi_ann_arbor_shelter_006": {
+        "resource_id": "mi_ann_arbor_shelter_006",
+        "org_name": "Safe House Center Domestic Violence Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_shelter_002": {
+        "resource_id": "mi_ypsilanti_shelter_002",
+        "org_name": "Dawn Farm Halfway House For Homeless Addicts",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_shelter_004": {
+        "resource_id": "mi_ypsilanti_shelter_004",
+        "org_name": "Ypsilanti Housing Commission Ypsilanti",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_shelter_007": {
+        "resource_id": "mi_ann_arbor_shelter_007",
+        "org_name": "Avalon Housing Permanent Affordable Housing",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_010": {
+        "resource_id": "mi_ann_arbor_shelter_010",
+        "org_name": "Michigan Ability Partners Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_008": {
+        "resource_id": "mi_ann_arbor_shelter_008",
+        "org_name": "Ann Arbor Housing Commission Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_009": {
+        "resource_id": "mi_ann_arbor_shelter_009",
+        "org_name": "Home Of New Vision Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_011": {
+        "resource_id": "mi_ann_arbor_shelter_011",
+        "org_name": "Cranbrook Tower Nonprofit Housing Corporation Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_dearbon_heights_shelter_001": {
+        "resource_id": "mi_dearbon_heights_shelter_001",
+        "org_name": "Mission Of Peace Cdc Dearbon Heights",
+        "city": "Dearbon Heights",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_shelter_012": {
+        "resource_id": "mi_ann_arbor_shelter_012",
+        "org_name": "Michigan State University Extension Service- Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_001": {
+        "resource_id": "mi_ann_arbor_shelter_001",
+        "org_name": "Interfaith Hospitality Network Of Washtenaw County - Alpha House Family Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_osm_0260": {
+        "resource_id": "mi_ann_arbor_osm_0260",
+        "org_name": "Peace Neighborhood Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_shelter_003": {
+        "resource_id": "mi_ypsilanti_shelter_003",
+        "org_name": "Prospect Place Family Shelter Program",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_shelter_013": {
+        "resource_id": "mi_ann_arbor_shelter_013",
+        "org_name": "Shelter Association Of Washtenaw County - Night Shelter Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_mi_osm_0198": {
+        "resource_id": "mi_mi_osm_0198",
+        "org_name": "Re-Entry Center",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_osm_0066": {
+        "resource_id": "mi_ann_arbor_osm_0066",
+        "org_name": "Delonis Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      }
+    }
+  },
+  "q26": {
+    "query": "food for kids after school",
+    "docs": {
+      "mi_ypsilanti_food_004": {
+        "resource_id": "mi_ypsilanti_food_004",
+        "org_name": "Hope Clinic Food Programs",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_001": {
+        "resource_id": "mi_ypsilanti_food_001",
+        "org_name": "Saint John Convent",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_005": {
+        "resource_id": "mi_ypsilanti_food_005",
+        "org_name": "Greater Shiloh Church",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_008": {
+        "resource_id": "mi_ypsilanti_food_008",
+        "org_name": "Emmanuel Lutheran Church",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_007": {
+        "resource_id": "mi_ypsilanti_food_007",
+        "org_name": "Family Inc",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_shelter_002": {
+        "resource_id": "mi_ypsilanti_shelter_002",
+        "org_name": "Dawn Farm Halfway House For Homeless Addicts",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_007": {
+        "resource_id": "mi_ann_arbor_shelter_007",
+        "org_name": "Avalon Housing Permanent Affordable Housing",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_food_001": {
+        "resource_id": "mi_ann_arbor_food_001",
+        "org_name": "The Back Door Food Pantry",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_004": {
+        "resource_id": "mi_ann_arbor_shelter_004",
+        "org_name": "Ashley Day Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ypsilanti_food_006": {
+        "resource_id": "mi_ypsilanti_food_006",
+        "org_name": "Greater Faith Mission",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_food_006": {
+        "resource_id": "mi_ann_arbor_food_006",
+        "org_name": "Ann Arbor Department Of Parks And Recreationbryant Community",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_food_005": {
+        "resource_id": "mi_ann_arbor_food_005",
+        "org_name": "Bryant Community Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_014": {
+        "resource_id": "mi_ypsilanti_food_014",
+        "org_name": "Brown Chapel AME",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_015": {
+        "resource_id": "mi_ypsilanti_food_015",
+        "org_name": "Hope America",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_002": {
+        "resource_id": "mi_ypsilanti_food_002",
+        "org_name": "SOS Community Services",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_011": {
+        "resource_id": "mi_ypsilanti_food_011",
+        "org_name": "Christian Life Center Church",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_010": {
+        "resource_id": "mi_ypsilanti_food_010",
+        "org_name": "Christian Love Fellowship",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_012": {
+        "resource_id": "mi_ypsilanti_food_012",
+        "org_name": "Cathedral of Deliverance",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_food_002": {
+        "resource_id": "mi_ann_arbor_food_002",
+        "org_name": "Second Baptist Church  Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_food_004": {
+        "resource_id": "mi_ann_arbor_food_004",
+        "org_name": "Northside Community Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_013": {
+        "resource_id": "mi_ann_arbor_shelter_013",
+        "org_name": "Shelter Association Of Washtenaw County - Night Shelter Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ypsilanti_food_003": {
+        "resource_id": "mi_ypsilanti_food_003",
+        "org_name": "Salvation Army  Ypsilanti",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_shelter_012": {
+        "resource_id": "mi_ann_arbor_shelter_012",
+        "org_name": "Michigan State University Extension Service- Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      }
+    }
+  },
+  "q27": {
+    "query": "free meals open right now",
+    "docs": {
+      "mi_ypsilanti_food_015": {
+        "resource_id": "mi_ypsilanti_food_015",
+        "org_name": "Hope America",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_002": {
+        "resource_id": "mi_ypsilanti_food_002",
+        "org_name": "SOS Community Services",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_003": {
+        "resource_id": "mi_ypsilanti_food_003",
+        "org_name": "Salvation Army  Ypsilanti",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_010": {
+        "resource_id": "mi_ypsilanti_food_010",
+        "org_name": "Christian Love Fellowship",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_011": {
+        "resource_id": "mi_ypsilanti_food_011",
+        "org_name": "Christian Life Center Church",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_mi_osm_0198": {
+        "resource_id": "mi_mi_osm_0198",
+        "org_name": "Re-Entry Center",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_mi_osm_0277": {
+        "resource_id": "mi_mi_osm_0277",
+        "org_name": "Dawn Farm - Spera",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_mi_osm_0389": {
+        "resource_id": "mi_mi_osm_0389",
+        "org_name": "Glacier Hills Supported Living",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_osm_0066": {
+        "resource_id": "mi_ann_arbor_osm_0066",
+        "org_name": "Delonis Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_osm_0067": {
+        "resource_id": "mi_ann_arbor_osm_0067",
+        "org_name": "Washtenaw Alano Club",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_food_005": {
+        "resource_id": "mi_ann_arbor_food_005",
+        "org_name": "Bryant Community Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_014": {
+        "resource_id": "mi_ypsilanti_food_014",
+        "org_name": "Brown Chapel AME",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_012": {
+        "resource_id": "mi_ypsilanti_food_012",
+        "org_name": "Cathedral of Deliverance",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_009": {
+        "resource_id": "mi_ypsilanti_food_009",
+        "org_name": "Corner Health Center Food Pantry",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_food_006": {
+        "resource_id": "mi_ann_arbor_food_006",
+        "org_name": "Ann Arbor Department Of Parks And Recreationbryant Community",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_food_001": {
+        "resource_id": "mi_ann_arbor_food_001",
+        "org_name": "The Back Door Food Pantry",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_013": {
+        "resource_id": "mi_ann_arbor_shelter_013",
+        "org_name": "Shelter Association Of Washtenaw County - Night Shelter Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_006": {
+        "resource_id": "mi_ann_arbor_shelter_006",
+        "org_name": "Safe House Center Domestic Violence Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_014": {
+        "resource_id": "mi_ann_arbor_shelter_014",
+        "org_name": "Shelter Association Of Washtenaw County - Services Only Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      }
+    }
+  },
+  "q28": {
+    "query": "housing for people leaving jail",
+    "docs": {
+      "mi_ann_arbor_shelter_007": {
+        "resource_id": "mi_ann_arbor_shelter_007",
+        "org_name": "Avalon Housing Permanent Affordable Housing",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_shelter_005": {
+        "resource_id": "mi_ypsilanti_shelter_005",
+        "org_name": "Hope America, Inc. - A/k/a Helping Ordinary People Excel Ypsilanti",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_shelter_004": {
+        "resource_id": "mi_ypsilanti_shelter_004",
+        "org_name": "Ypsilanti Housing Commission Ypsilanti",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_shelter_008": {
+        "resource_id": "mi_ann_arbor_shelter_008",
+        "org_name": "Ann Arbor Housing Commission Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_011": {
+        "resource_id": "mi_ann_arbor_shelter_011",
+        "org_name": "Cranbrook Tower Nonprofit Housing Corporation Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_dearbon_heights_shelter_001": {
+        "resource_id": "mi_dearbon_heights_shelter_001",
+        "org_name": "Mission Of Peace Cdc Dearbon Heights",
+        "city": "Dearbon Heights",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ypsilanti_shelter_002": {
+        "resource_id": "mi_ypsilanti_shelter_002",
+        "org_name": "Dawn Farm Halfway House For Homeless Addicts",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_shelter_012": {
+        "resource_id": "mi_ann_arbor_shelter_012",
+        "org_name": "Michigan State University Extension Service- Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_002": {
+        "resource_id": "mi_ann_arbor_shelter_002",
+        "org_name": "Salvation Army Staples Family Center Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_001": {
+        "resource_id": "mi_ann_arbor_shelter_001",
+        "org_name": "Interfaith Hospitality Network Of Washtenaw County - Alpha House Family Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_mi_osm_0198": {
+        "resource_id": "mi_mi_osm_0198",
+        "org_name": "Re-Entry Center",
+        "city": "",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_osm_0260": {
+        "resource_id": "mi_ann_arbor_osm_0260",
+        "org_name": "Peace Neighborhood Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_006": {
+        "resource_id": "mi_ann_arbor_shelter_006",
+        "org_name": "Safe House Center Domestic Violence Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_shelter_003": {
+        "resource_id": "mi_ypsilanti_shelter_003",
+        "org_name": "Prospect Place Family Shelter Program",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_osm_0066": {
+        "resource_id": "mi_ann_arbor_osm_0066",
+        "org_name": "Delonis Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_osm_0275": {
+        "resource_id": "mi_ann_arbor_osm_0275",
+        "org_name": "Ozone House",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_osm_0116": {
+        "resource_id": "mi_ann_arbor_osm_0116",
+        "org_name": "MOST Ministries",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_013": {
+        "resource_id": "mi_ann_arbor_shelter_013",
+        "org_name": "Shelter Association Of Washtenaw County - Night Shelter Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_shelter_006": {
+        "resource_id": "mi_ypsilanti_shelter_006",
+        "org_name": "Sos Community Services - Prospect Place Family Shelter Program",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_shelter_014": {
+        "resource_id": "mi_ann_arbor_shelter_014",
+        "org_name": "Shelter Association Of Washtenaw County - Services Only Program",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_009": {
+        "resource_id": "mi_ann_arbor_shelter_009",
+        "org_name": "Home Of New Vision Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 2
+      }
+    }
+  },
+  "q29": {
+    "query": "community fridge or free food near me",
+    "docs": {
+      "mi_ypsilanti_food_002": {
+        "resource_id": "mi_ypsilanti_food_002",
+        "org_name": "SOS Community Services",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_food_005": {
+        "resource_id": "mi_ann_arbor_food_005",
+        "org_name": "Bryant Community Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_food_004": {
+        "resource_id": "mi_ann_arbor_food_004",
+        "org_name": "Northside Community Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_shelter_006": {
+        "resource_id": "mi_ypsilanti_shelter_006",
+        "org_name": "Sos Community Services - Prospect Place Family Shelter Program",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_food_006": {
+        "resource_id": "mi_ann_arbor_food_006",
+        "org_name": "Ann Arbor Department Of Parks And Recreationbryant Community",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_015": {
+        "resource_id": "mi_ypsilanti_food_015",
+        "org_name": "Hope America",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_003": {
+        "resource_id": "mi_ypsilanti_food_003",
+        "org_name": "Salvation Army  Ypsilanti",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_010": {
+        "resource_id": "mi_ypsilanti_food_010",
+        "org_name": "Christian Love Fellowship",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_011": {
+        "resource_id": "mi_ypsilanti_food_011",
+        "org_name": "Christian Life Center Church",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_012": {
+        "resource_id": "mi_ypsilanti_food_012",
+        "org_name": "Cathedral of Deliverance",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_014": {
+        "resource_id": "mi_ypsilanti_food_014",
+        "org_name": "Brown Chapel AME",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_009": {
+        "resource_id": "mi_ypsilanti_food_009",
+        "org_name": "Corner Health Center Food Pantry",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ypsilanti_food_007": {
+        "resource_id": "mi_ypsilanti_food_007",
+        "org_name": "Family Inc",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_shelter_002": {
+        "resource_id": "mi_ann_arbor_shelter_002",
+        "org_name": "Salvation Army Staples Family Center Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_osm_0066": {
+        "resource_id": "mi_ann_arbor_osm_0066",
+        "org_name": "Delonis Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "shelter"
+        ],
+        "label": 1
+      },
+      "mi_ann_arbor_shelter_006": {
+        "resource_id": "mi_ann_arbor_shelter_006",
+        "org_name": "Safe House Center Domestic Violence Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_011": {
+        "resource_id": "mi_ann_arbor_shelter_011",
+        "org_name": "Cranbrook Tower Nonprofit Housing Corporation Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_008": {
+        "resource_id": "mi_ann_arbor_shelter_008",
+        "org_name": "Ann Arbor Housing Commission Ann Arbor",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_007": {
+        "resource_id": "mi_ann_arbor_shelter_007",
+        "org_name": "Avalon Housing Permanent Affordable Housing",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      }
+    }
+  },
+  "q30": {
+    "query": "emergency food near ypsilanti",
+    "docs": {
+      "mi_ypsilanti_shelter_004": {
+        "resource_id": "mi_ypsilanti_shelter_004",
+        "org_name": "Ypsilanti Housing Commission Ypsilanti",
+        "city": "Ypsilanti",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ypsilanti_food_003": {
+        "resource_id": "mi_ypsilanti_food_003",
+        "org_name": "Salvation Army  Ypsilanti",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_shelter_005": {
+        "resource_id": "mi_ann_arbor_shelter_005",
+        "org_name": "Salvation Army Of Washtenaw County Henry St",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ann_arbor_shelter_002": {
+        "resource_id": "mi_ann_arbor_shelter_002",
+        "org_name": "Salvation Army Staples Family Center Shelter",
+        "city": "Ann Arbor",
+        "service_category": [
+          "housing_assistance",
+          "shelter"
+        ],
+        "label": 0
+      },
+      "mi_ypsilanti_food_012": {
+        "resource_id": "mi_ypsilanti_food_012",
+        "org_name": "Cathedral of Deliverance",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_014": {
+        "resource_id": "mi_ypsilanti_food_014",
+        "org_name": "Brown Chapel AME",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_015": {
+        "resource_id": "mi_ypsilanti_food_015",
+        "org_name": "Hope America",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_food_005": {
+        "resource_id": "mi_ann_arbor_food_005",
+        "org_name": "Bryant Community Center",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_002": {
+        "resource_id": "mi_ypsilanti_food_002",
+        "org_name": "SOS Community Services",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_010": {
+        "resource_id": "mi_ypsilanti_food_010",
+        "org_name": "Christian Love Fellowship",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_007": {
+        "resource_id": "mi_ypsilanti_food_007",
+        "org_name": "Family Inc",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_006": {
+        "resource_id": "mi_ypsilanti_food_006",
+        "org_name": "Greater Faith Mission",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_004": {
+        "resource_id": "mi_ypsilanti_food_004",
+        "org_name": "Hope Clinic Food Programs",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_009": {
+        "resource_id": "mi_ypsilanti_food_009",
+        "org_name": "Corner Health Center Food Pantry",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_001": {
+        "resource_id": "mi_ypsilanti_food_001",
+        "org_name": "Saint John Convent",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ypsilanti_food_011": {
+        "resource_id": "mi_ypsilanti_food_011",
+        "org_name": "Christian Life Center Church",
+        "city": "Ypsilanti",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      },
+      "mi_ann_arbor_food_006": {
+        "resource_id": "mi_ann_arbor_food_006",
+        "org_name": "Ann Arbor Department Of Parks And Recreationbryant Community",
+        "city": "Ann Arbor",
+        "service_category": [
+          "food_pantry"
+        ],
+        "label": 2
+      }
+    }
+  }
+}

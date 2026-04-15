@@ -1,142 +1,422 @@
 {
   "q1": {
     "ranked_labels": [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1,
+      1
     ]
   },
   "q2": {
     "ranked_labels": [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      2,
+      0,
+      0
     ]
   },
   "q3": {
     "ranked_labels": [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
+      2,
+      2,
+      0,
+      2,
+      2,
+      2,
+      0,
+      0,
+      0,
+      2
     ]
   },
   "q4": {
     "ranked_labels": [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
     ]
   },
   "q5": {
     "ranked_labels": [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      0,
+      2,
+      2
     ]
   },
   "q6": {
     "ranked_labels": [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
     ]
   },
   "q7": {
     "ranked_labels": [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   "q8": {
     "ranked_labels": [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
     ]
   },
   "q9": {
     "ranked_labels": [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      2
     ]
   },
   "q10": {
     "ranked_labels": [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
+      2,
+      2,
+      2,
+      2,
+      0,
+      2,
+      2,
+      2,
+      2,
+      2
+    ]
+  },
+  "q11": {
+    "ranked_labels": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "q12": {
+    "ranked_labels": [
+      0,
+      0,
+      1,
+      2,
+      1,
+      2,
+      2,
+      2,
+      0,
+      1
+    ]
+  },
+  "q13": {
+    "ranked_labels": [
+      1,
+      0,
+      1,
+      2,
+      1,
+      0,
+      2,
+      0,
+      0,
+      2
+    ]
+  },
+  "q14": {
+    "ranked_labels": [
+      2,
+      2,
+      2,
+      1,
+      1,
+      2,
+      1,
+      2,
+      0,
+      2
+    ]
+  },
+  "q15": {
+    "ranked_labels": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "q16": {
+    "ranked_labels": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "q17": {
+    "ranked_labels": [
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1
+    ]
+  },
+  "q18": {
+    "ranked_labels": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "q19": {
+    "ranked_labels": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "q20": {
+    "ranked_labels": [
+      0,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "q21": {
+    "ranked_labels": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ]
+  },
+  "q22": {
+    "ranked_labels": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "q23": {
+    "ranked_labels": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "q24": {
+    "ranked_labels": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      0,
+      2
+    ]
+  },
+  "q25": {
+    "ranked_labels": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1
+    ]
+  },
+  "q26": {
+    "ranked_labels": [
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      0,
+      2,
+      2
+    ]
+  },
+  "q27": {
+    "ranked_labels": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "q28": {
+    "ranked_labels": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      2
+    ]
+  },
+  "q29": {
+    "ranked_labels": [
+      2,
+      2,
+      2,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0
+    ]
+  },
+  "q30": {
+    "ranked_labels": [
+      0,
+      2,
+      0,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1
     ]
   }
 }
