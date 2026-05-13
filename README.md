@@ -1,4 +1,8 @@
-<img width="960" height="624" alt="91296DD8-EC3A-406B-9D4E-B42D745AEAB5_1_102_o" src="https://github.com/user-attachments/assets/59f8022a-ea16-483f-9a5f-2f20ad0a0dd9" />
+
+
+https://github.com/user-attachments/assets/e33f4ed0-914a-4a86-85ee-2d2dfce2a628
+
+
 # Local Resource Finder
 
 A constraint-aware local resource finder for food and housing insecurity in Michigan. It builds a structured index of food pantries, emergency shelters, and housing assistance programs from web scraping and OpenStreetMap, then answers conversational queries like *"food pantry open tonight near me for families"* using hybrid BM25 + semantic retrieval with constraint-aware reranking.
